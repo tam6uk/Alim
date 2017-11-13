@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Каталог товаров</title>
+</head>
+
+<body>
+  <header class="main-header">
+    <div class="container">
+      <nav class="main-navigiation">
+        <div class="main-logo">
+          <a href="index.html">
+            <img src="/img/logo.png" alt="Логотип">
+          </a>
+        </div>
+        <ul>
+          <li>
+            <a href="index.html">Информация</a>
+          </li>
+          <li>
+            <a href="#">Новости</a>
+          </li>
+          <li>
+            <a href="price-page.html">Прайс-лист</a>
+          </li>
+          <li>
+            <a class="active">Магазин</a>
+          </li>
+          <li>
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="user-block">
+        <a class="login" href="#" >Вход</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="catalog-title">
+      Средства для ухода
+    </div>
+    <ul class="breadcrumbs">
+      <li class="breadcrumbs-item">
+        <a href="index.html">Главная</a>
+      </li>
+      <li class="breadcrumbs-item">
+        <a href="#">Магазин</a>
+      </li>
+      <li class="breadcrumbs-item">
+        Средства для ухода
+      </li>
+    </ul>
+
+    <form id="manufacturers-form">
+      <h2>Производители</h2>
+      <input id="c1" type="checkbox" name="1st" checked>
+      <label for="c1">Baxter of California</label>
+      <input id="c2" type="checkbox" name="2nd">
+      <label for="c2">Mr Natty</label>
+      <input id="c3" type="checkbox" name="3rd" checked>
+      <label for="c3">Suavecito</label>
+      <input id="c4" type="checkbox" name="4th">
+      <label for="c4">Malin+Goetz</label>
+      <input id="c5" type="checkbox" name="5th">
+      <label for="c5">Murray’s</label>
+      <input id="c6" type="checkbox" name="6th" checked>
+      <label for="c6">American Crew</label>
+    </form>
+
+    <form id="groups-form">
+      <h2>Группы товаров:</h2>
+      <input id="r1" type="radio" name="cat-radio" checked>
+      <label for="r1">Бритвенные принадлежности</label>
+      <input id="r2" type="radio" name="cat-radio">
+      <label for="r2">Средства для ухода</label>
+      <input id="r3" type="radio" name="cat-radio">
+      <label for="r3">Аксессуары</label>
+    </form>
+
+    <div class="goods items">
+      <figure class="item-card">
+        <a href="item.html">
+          <div class="img-wrapper">
+            <img src="img/catalog-content-1.jpg" height="165" width="220" alt="Набор для путешествий">
+          </div>
+        </a>
+        <div class="item-card-description">
+          <h3>Baxter of California</h3>
+          <p>Набор для путешествий</p>
+          <div class="price">
+            <p class="price-text">2 900 руб.</p>
+            <a class="price-btn" href="#">купить</a>
+          </div>
+        </div>
+      </figure>
+
+      <figure class="item-card">
+        <div class="img-wrapper">
+          <img src="img/catalog-content-2.jpg" alt="Увлажняющий кондиционер">
+        </div>
+        <div class="item-card-description">
+          <h3>Baxter of California</h3>
+          <p>Увлажняющий кондиционер</p>
+          <div class="price">
+            <p class="price-text">750 руб.</p>
+            <a class="price-btn" href="#">купить</a>
+          </div>
+        </div>
+      </figure>
+
+      <figure class="item-card">
+        <div class="img-wrapper">
+          <img src="img/catalog-content-3.jpg" alt="Гель для волос">
+        </div>
+        <div class="item-card-description">
+          <h3>Suavecito</h3>
+          <p>Гель для волос</p>
+          <div class="price">
+            <p class="price-text">290 руб.</p>
+            <a class="price-btn" href="#">купить</a>
+          </div>
+        </div>
+      </figure>
+
+      <figure class="item-card">
+        <div class="img-wrapper">
+          <img src="img/catalog-content-4.jpg" alt="Глина для укладки волос">
+        </div>
+        <div class="item-card-description">
+          <h3>American crew</h3>
+          <p>Глина для укладки волос</p>
+          <div class="price">
+            <p class="price-text">500 руб.</p>
+            <a class="price-btn" href="#">купить</a>
+          </div>
+        </div>
+      </figure>
+
+      <figure class="item-card">
+        <div class="img-wrapper">
+          <img src="img/catalog-content-5.jpg" alt="Гель для волос">
+        </div>
+        <div class="item-card-description">
+          <h3>American crew</h3>
+          <p>Гель для волос</p>
+          <div class="price">
+            <p class="price-text">300 руб.</p>
+            <a class="price-btn" href="#">купить</a>
+          </div>
+        </div>
+      </figure>
+
+      <figure class="item-card">
+        <div class="img-wrapper">
+          <img src="img/catalog-content-6.jpg" alt="Набор для бритья">
+        </div>
+        <div class="item-card-description">
+          <h3>Baxter of California</h3>
+          <p>Набор для бритья</p>
+          <div class="price">
+            <p class="price-text">3 900 руб.</p>
+            <a class="price-btn" href="#">купить</a>
+          </div>
+        </div>
+      </figure>
+    </div>
+
+    <div class="paginator">
+      <a href="#">1</a>
+      <a class="active">2</a>
+      <a href="#">3</a>
+      <a href="#">4</a>
+    </div>
+  </main>
+
+
+
+
+  <footer class="main-footer">
+    <div class="container">
+      <section class="footer-contacts">
+        Барбершоп "Бородинский"
+        <br> Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8
+        <br>
+        <a href="#">Как нас найти?</a>
+        <br> Телефон: +7 (812) 666-02-66
+      </section>
+      <section class="footer-social">
+        <a href="#" class="social-btn social-btn-vk">Вконтакте</a>
+        <a href="#" class="social-btn social-btn-fb">Фейсбук</a>
+        <a href="#" class="social-btn social-btn-inst">Инстаграм</a>
+      </section>
+      <section class="footer-copyright">
+        <p>Разработано:</p>
+        <a href="https://htmlacademy.tu" class="btn">HTML Academy</a>
+      </section>
+    </div>
+  </footer>
+
+</body>
+
+</html>

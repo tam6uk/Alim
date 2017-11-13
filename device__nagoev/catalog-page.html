@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Каталог</title>
+</head>
+
+<body>
+
+	<header class="main-header">
+		<div class="container">
+			<div class="main-logo">
+				<img src="/img/logo.png" alt="Логотип" width="164" height="36">
+			</div>
+			<form action="#" method="get">
+				<input type="search" name="search" id="search" placeholder="Поиск по сайту">
+				<label for="search">Найти</label>
+			</form>
+			<div class="user-block">
+				<a href="#" class="login">Вход</a>
+				<a href="#" class="compare">Сравнить</a>
+				<a href="#" class="cart">Корзина</a>
+			</div>
+			<div class="submenu-dropdown">
+				<a href="catalog-page.html">Каталог товаров</a>
+				<ul class="dropdown-list">
+					<li class="list-item">
+						<a href="#">Виртуальная реальность</a>
+					</li>
+					<li class="list-item">
+						<a href="#">Моноподы для селфи</a>
+					</li>
+					<li class="list-item">
+						<a href="#">Экшн-камеры</a>
+					</li>
+				</ul>
+				<ul class="dropdown-list">
+					<li class="list-item">
+						<a href="#">Фитнесс-браслеты</a>
+					</li>
+					<li class="list-item">Умные часы</li>
+				</ul>
+				<ul class="dropdown-list">
+					<li class="list-item">Квадрокоптеры</li>
+				</ul>
+			</div>
+			<nav class="menu">
+				<ul>
+					<li class="menu-item">
+						<a href="#">Доставка</a>
+					</li>
+					<li class="menu-item">
+						<a href="#">Гарантия</a>
+					</li>
+					<li class="menu-item">
+						<a href="#">Контакты</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<main class="main">
+		<div class="container">
+			<h1 class="catalog-title">Моноподы для селфи</h1>
+			<ul class="breadcrumbs">
+				<li class="breadcrumbs-item">
+					<a class="breadcrumbs-link" href="index.html">Главная</a>
+				</li>
+				<li class="breadcrumbs-item">
+					<a class="breadcrumbs-link" href="#">Каталог товаров</a>
+				</li>
+				<li class="breadcrumbs-item">
+					<a class="breadcrumbs-link">Моноподы для селфи</a>
+				</li>
+			</ul>
+	
+		<div class="sort">
+			<div class="section-subtitle">Сортировка:</div>
+			<ul class="sort-list">
+				<li class="sort-item">
+					<a class="sort-link  sort-link--active">По цене</a>
+				</li>
+				<li class="sort__item">
+					<a class="sort-link" href="#">По цене</a>
+				</li>
+				<li class="sort__item">
+					<a class="sort-link" href="#">По популярности</a>
+				</li>
+			</ul>
+			<div class="sort-direction">
+				<a class="sort-direction--up" href="#">Вверх</a>
+				<a class="sort-direction--up" href="#">Вниз</a>
+			</div>
+		</div>
+
+
+
+		<div class="filter">
+
+			<div class="section-subtitle">Фильтр:</div>
+
+			<form action="#" method="post">
+
+				<div class="filter-subtitle">Стоимость</div>
+				<div class="price-filter">
+					<label for="price-filter--from">от</label>
+					<input class="price-filter--input" id="price-filter--from" type="text" value="0">
+					<label for="price-filter--to">до</label>
+					<input class="price-filter--input" id="price-filter--to" type="text" value="5000">
+				</div>
+
+				<div class="filter-subtitle">Цвет</div>
+				<ul class="filter-list">
+					<li class="filter-list--item">
+						<input class="filter-input" id="color-black" type="checkbox" name="color-black" value="color-black" checked>
+						<label class="filter-text" for="color-black">Черный</label>
+					</li>
+					<li class="filter-list--item">
+						<input class="filter-input" id="color-white" type="checkbox" name="color-white" value="color-white">
+						<label class="filter-text" for="color-white">Белый</label>
+					</li>
+					<li class="filter-list--item">
+						<input class="filter-input" id="color-blue" type="checkbox" name="color-blue" value="color-blue" checked>
+						<label class="filter-text" for="color-blue">Синий</label>
+					</li>
+					<li class="filter-list--item">
+						<input class="filter-input" id="color-red" type="checkbox" name="color-red" value="color-red" checked>
+						<label class="filter-text" for="color-red">Красный</label>
+					</li>
+					<li class="filter-list--item">
+						<input class="filter-input" id="color-pink" type="checkbox" name="color-pink" value="color-pink">
+						<label class="filter-text" for="color-pink">Розовый</label>
+					</li>
+				</ul>
+
+				<div class="filter-subtitle">Bluetooth</div>
+				<ul class="filter-list">
+					<li class="filter-list--item">
+						<input class="filter-input" id="bluetooth-yes" type="radio" name="bluetooth" value="yes" checked>
+						<label class="filter-text" for="bluetooth-yes">Есть</label>
+					</li>
+					<li class="filter-list--item">
+						<input class="filter-input" id="bluetooth-no" type="radio" name="bluetooth" value="no">
+						<label class="filter-text" for="bluetooth-no">Нет</label>
+					</li>
+				</ul>
+
+				<button class="btn btn--show" type="submit">Показать</button>
+			</form>
+
+		</div>
+
+		<div class="result">
+
+			<figure class="item-card">
+				<div class="img-wrapper">
+					<img class="item-cart__image" src="img/item-1.jpg" width="360" height="380" alt="Фото любительской селфи-палки">
+				</div>
+				<div class="item-card-description">
+					<a class="item-cart-link" href="#">Любительская селфи-палка</a>
+					<p class="price-text">500 руб.</p>
+				</div>
+			</figure>
+
+			<figure class="item-card">
+				<div class="img-wrapper">
+					<img class="item-cart__image" src="img/item-1.jpg" width="360" height="380" alt="Фото любительской селфи-палки">
+				</div>
+				<div class="item-card-description">
+					<a class="item-cart-link" href="#">Любительская селфи-палка</a>
+					<p class="price-text">500 руб.</p>
+				</div>
+			</figure>
+
+			<figure class="item-card">
+				<div class="img-wrapper">
+					<img class="item-cart__image" src="img/item-1.jpg" width="360" height="380" alt="Фото любительской селфи-палки">
+				</div>
+				<div class="item-card-description">
+					<a class="item-cart-link" href="#">Любительская селфи-палка</a>
+					<p class="price-text">500 руб.</p>
+				</div>
+			</figure>
+
+			<figure class="item-card">
+				<div class="img-wrapper">
+					<img class="item-cart__image" src="img/item-1.jpg" width="360" height="380" alt="Фото любительской селфи-палки">
+				</div>
+				<div class="item-card-description">
+					<a class="item-cart-link" href="#">Любительская селфи-палка</a>
+					<p class="price-text">500 руб.</p>
+				</div>
+			</figure>
+		</div>
+
+		<div class="paginator">
+				<a href="#">Назад</a>
+				<a class="active" href="#">1</a>
+				<a href="#">2</a>
+				<a href="#">3</a>
+				<a href="#">Вперед</a>
+		</div>
+
+		</div>
+	</main>
+
+	<footer class="main-footer">
+		<div class="container">
+			<div class="main-logo">
+				<img src="/img/logo.png" alt="Логотип" width="164" height="36">
+			</div>
+			<div class="user-block">
+				<a class="login" href="#">Вход</a>
+				<a class="compare" href="#">Сравнить</a>
+				<a class="cart" href="#">Корзина</a>
+			</div>
+
+			<div class="contacts">
+				<p class="company-address">г. Москва, ул. Строителей, 15</p>
+				<nav class="menu">
+					<ul>
+						<li class="menu-item">
+							<a href="#">Доставка</a>
+						</li>
+						<li class="menu-item">
+							<a href="#">Гарантия</a>
+						</li>
+						<li class="menu-item">
+							<a href="#">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+				<span class="phone-number">Тел.: +7 (495) 495-95-95</span>
+			</div>
+
+			<div class="social-goods">
+				<ul class="social">
+					<li class="social-item">
+						<a class="social-link  social-link--facebook" href="#">Facebook</a>
+					</li>
+					<li class="social-item">
+						<a class="social-link  social-link--instagram" href="#">Instagram</a>
+					</li>
+					<li class="social-item">
+						<a class="social-link  social-link--twitter" href="#">Twitter</a>
+					</li>
+				</ul>
+				<a class="copyright" href="https://htmlacademy.ru">htmlacademy.ru</a>
+			</div>
+		</div>
+	</footer>
+</body>
+
+</html>

@@ -1,0 +1,9 @@
+body {
+    font-style: 14px;
+    line-height: 24px;
+    font-family: "PT Sans Narrow", Arial, sans-serif;
+
+    color: #ffffff;
+
+    background: #111 url("../img/bckgr-index.jpg") no-repeat center top;
+}
