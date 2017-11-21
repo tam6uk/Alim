@@ -3,7 +3,7 @@ body {
     line-height: 24px;
     font-family: "PT Sans Narrow", Arial, sans-serif;
 
-    color: #ffffff;
+    color: #000;
 
-    background: #111 url("../img/bckgr-index.jpg") no-repeat center top;
+    /* background: #111 url("../img/bckgr-index.jpg") no-repeat center top; */
 }
