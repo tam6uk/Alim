@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Прайс-лист</title>
@@ -13,12 +14,10 @@
 <body>
 <!-- HEADER -->
     <header class="main-header">
-        <div class="container">
-            <div class="main-logo">
-                <a href="index.html">
-                    <img src="img/logo_sm.svg" width="114" height="29" alt="Барбершоп Бородинский">
-                </a>
-            </div>
+        <div class="container clearfix">
+            <a class="main-logo" href="index.html">
+                <img src="img/logo-ico.png" width="114" height="29" alt="Барбершоп Бородинский">
+            </a>
             <nav class="main-navigiation">
                 <ul>
                     <li>
@@ -49,7 +48,7 @@
 
         <h1 class="item-title">Прайс-лист</h1>
 
-        <div class="breadcrumbs">
+        <nav class="breadcrumbs">
             <ul class="breadcrumbs-items">
                 <li class="breadcrumbs-item">
                     <a href="index.html">Главная</a>
@@ -58,11 +57,11 @@
                     <a href="#">Прайс-лист</a>
                 </li>
             </ul>
-        </div>
+        </nav>
 
         <span class="classic">Истинно мужская классика</span>
 
-        <div class="price-items">
+        <div class="price-items clearfix">
             <div class="composition">
                 <h3 class="composition-title">Мы используем только лучшие средства</h3>
                 <ul class="composition-list">
@@ -90,23 +89,24 @@
                     </tr>
                 </table>
             </div>
-            <div class="about-us">
-                <h3 class="about-us-title">Несколько слов о нас:</h3>
-                <div class="about-us-desc">
-                    <p>Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас - это
-                        уникальная и продуманная до мелочей работа. Мы не работаем на количество, мы делаем качество.</p>
-                    <p>Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно в любое время, даже
-                        в обеденный перерыв. Здесь вы можете погрузиться в удобную для вас атмосферу, чувствовать себя комфортно
-                        и свободно!</p>
-                </div>
+        </div>
+        <div class="about-us clearfix">
+            <h3 class="about-us-title">Несколько слов о нас:</h3>
+            <div class="about-us-desc">
+                <p class="desc-item">Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас - это
+                    уникальная и продуманная до мелочей работа. Мы не работаем на количество, мы делаем качество.</p>
+                <p class="desc-item">Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно в любое время, даже
+                    в обеденный перерыв. Здесь вы можете погрузиться в удобную для вас атмосферу, чувствовать себя комфортно
+                    и свободно!</p>
             </div>
         </div>
+        
 
     </div>
 </main>
 <!-- FOOTER -->
-   <footer class="main-footer">
-		<div class="container">
+    <footer class="main-footer">
+		<div class="container clearfix">
 			<div class="footer-contacts">
 				<p>
 					Барбершоп "Бородинский"<br>

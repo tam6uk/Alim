@@ -5,6 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 	<title>Барбершоп "Бородинский"</title>
@@ -13,8 +14,9 @@
 <body>
 <!-- HEADER -->
 	<header class="main-header">
-		<div class="container">
+		<div class="container clearfix">
 			<nav class="main-navigiation">
+
 				<ul>
 					<li>
 						<a href="#">Информация</a>
@@ -32,6 +34,7 @@
 						<a href="#">Контакты</a>
 					</li>
 				</ul>
+
 			</nav>
 			<div class="user-block">
 				<a class="login" href="#">Вход</a>
@@ -43,10 +46,10 @@
 		<div class="container">
 			<!-- LOGO SECTION -->
 			<div class="index-logo">
-				<img src="logo.png" alt="Барбершоп Бородинский" width="368" height="204">
+				<img src="img/logo.png" alt="Барбершоп Бородинский" width="368" height="204">
 			</div>
-<!-- FEATURES SRCTION -->
-			<div class="features">
+			<!-- FEATURES SRCTION -->
+			<div class="features clearfix">
 				<div class="features-item">
 					<b class="features-name">Быстро</b>
 					<p>Мы делаем свою работу быстро! Два часа пролетят незаметно и вы - счастливый обладатель стильной стрижки-минутки!</p>
@@ -63,8 +66,8 @@
 					</p>
 				</div>
 			</div>
-<!-- MAIN CONTENT -->
-			<div class="index-content">
+			<!-- MAIN CONTENT -->
+			<div class="index-content clearfix">
 
 				<div class="index-content-left">
 					<h2 class="index-content-title">Новости</h2>
@@ -93,7 +96,7 @@
 				</div>
 			</div>
 
-			<div class="index-content">
+			<div class="index-content clearfix">
 
 				<div class="index-content-left">
 					<h2 class="index-content-title">Контактная информация</h2>
@@ -116,10 +119,14 @@
 					<h2 class="index-content-title">Записаться</h2>
 					<p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
 					<form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
-						<input type="text" name="date" placeholder="Дата">
-						<input type="text" name="time" placeholder="Время">
-						<input type="text" name="name" placeholder="Ваше имя">
-						<input type="tel" name="phone" placeholder="Телефон">
+						<input type="text" name="date" id="date" placeholder="08.10.2017">
+						<label for="date">Дата</label>
+						<input type="text" name="time" placeholder="10:00">
+						<label for="date">Время</label>
+						<input type="text" name="name" placeholder="Борода">
+						<label for="date">Ваше имя</label>
+						<input type="tel" name="phone" placeholder="+7 123 456-78-90">
+						<label for="date">Телефон</label>
 						<button class="btn btn-submit" type="submit">Отправить</button>
 					</form>
 				</div>
@@ -127,9 +134,9 @@
 		</div>
 
 	</main>
-<!-- FOOTER -->
+	<!-- FOOTER -->
 	<footer class="main-footer">
-		<div class="container">
+		<div class="container clearfix">
 			<div class="footer-contacts">
 				<p>
 					Барбершоп "Бородинский"<br>
@@ -149,7 +156,7 @@
 			</div>
 		</div>
 	</footer>
-<!-- MODAL -->
+	<!-- MODAL -->
 	<div class="modal">
 		<h2>Личный кабинет</h2>
 		<form class="enter-form" action="#" method="post">
@@ -161,13 +168,15 @@
 			<label for="remember">Запомните меня</label>
 			<a class="forgot-pass" href="#">Я забыл пароль!</a>
 			</div>
-			<button class="btn btn-enter" type="submit"  name="enter-submit">Войти</button>
+			<button class="btn btn-enter" type="submit" name="enter-submit">Войти</button>
 			<a class="close" href="#"></a>
 		</form>
 	</div>
 
-	<div class="overlay"></div>
-
+	<div class="popup-map">
+			<button class="popup-close" type="button">Закрыть</button>
+			<iframe src="https://yandex.ru/map-widget/v1/-/CVgJR079" width="780" height="570" frameborder="7"></iframe>
+		</div>
 
 	<script src="js/script.js"></script>
 </body>
