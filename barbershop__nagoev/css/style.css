@@ -6,6 +6,7 @@ body {
 body {
     font-size: 14px;
     line-height: 24px;
+    color: #000000;
     font-family: "PtSansNarrow", Arial, serif;
 }
 *, *::before,*::after {
@@ -20,7 +21,7 @@ body {
 	clear: both;
 }
 .container {
-    width: 940px;
+    width: 960px;
     padding: 0 10px;
     margin: 0 auto;
 
@@ -30,10 +31,11 @@ body {
 HEADER
 *************************************/
 .main-header {
+    /* для создания сетки */
     margin-bottom: 60px;
 }
-.main-header .container{
-    padding-top: 22px;
+.main-header .container {
+    padding: 23px 10px;
 }
 .main-logo img {
     display: block;
@@ -44,7 +46,7 @@ HEADER
     outline: 1px solid red;
 }
 .main-navigiation {
-    width: 620px;
+    width: 780px;
     float: left;
 
     outline: 1px solid red;
@@ -53,21 +55,33 @@ HEADER
     list-style: none;
     display: inline-block;
 }
+.main-navigiation a,
+.login {
+    font-size: 16px;
+    line-height: 20px;
+    /* color: #ffffff; */
+    text-transform: uppercase;
+    text-decoration: none;
+
+}
 .user-block {
     width: 140px;
     float: right;
-
+    
     outline: 1px solid red;
-}
+}   
 
 /*************************************
 MAIN
 INDEX-LOGO
 *************************************/
+.index-logo {
+    margin-bottom: 25px;
+}
 .index-logo img{
     display: block;
-    margin: 0 auto;
-    margin-bottom: 25px;
+    margin-right: auto;
+    margin-left: auto;
 
     outline: 1px solid red;
 }
@@ -78,14 +92,23 @@ FEATURES
     margin-bottom: 80px;
 }
 .features-item {
-    width: 293px;
+    width: 300px;
     float: left;
     margin-right: 20px;
+    text-align: center;
+    text-transform: uppercase;
 
+
+    /* Для сетки */
+    height: 175px;
     outline: 1px solid red;
 }
 .features-item:last-child {
     margin-right: 0;
+}
+.features-name {
+    font-size: 30px;
+    line-height: 40px;
 }
 /*************************************
 CONTENT-INDEX
@@ -98,20 +121,38 @@ CONTENT-INDEX
 .index-content:last-child {
     margin-bottom: 0;
 }
-.index-content-left {
-    width: 380px;
+.index-content-item:first-child,
+.index-content-item:nth-child(3) {
+    width: 390px;
     float: left;
-
+    margin-right: 90px;
     outline: 1px solid red;
 }
-.index-content-right {
+.index-content-item:nth-child(2),
+.index-content-item:last-child {
     width: 300px;
     float: right;
 
     outline: 1px solid red;
 }
+.index-content-title {
+    font-size: 30px;
+    line-height: 40px;
+    text-transform: uppercase;
+}
+.news-preview {
+    list-style: none;
+}
 .btn-submit {
     display: block;
+}
+.gallery-content {
+    margin: 0;
+}
+.input-wrap {
+    display: inline-block;
+    width: 100px;
+    margin-right: 20px;
 }
 /*************************************
 FOOTER
@@ -131,6 +172,7 @@ FOOTER
     outline: 1px solid red;
 }
 .footer-social {
+    text-align: center;
     width: 140px;
     float: left;
 
@@ -175,19 +217,23 @@ ITEM - BLOCK
 ITEM - IMG
 *************************************/
 .item-imgs {
-    width: 480px;
-    margin-right: 40px;
+    width: 460px;
     float: left;
 
     outline: 1px solid red;
 }
 .item-article {
-    width: 400px;
+    width: 390px;
     float: right;
 
     outline: 1px solid red;
 }
-
+.item-article {
+    padding-left: 10px;
+}
+.contents-list {
+    list-style: none;
+}
 /*************************************
 PAGE 3 PRICE PAGE
 *************************************/
@@ -203,14 +249,18 @@ COMPOSITION
     margin-bottom: 60px;
 }
 .composition {
-    width: 300px;
+    width: 390px;
     float: left;
+    margin-right: 80px;
+    padding-left: 10px;
 
     outline: 1px solid red;
 }
-
+.composition-list {
+    list-style: none;
+}
 .price-table {
-    width: 460px;
+    width: 470px;
     float: right;
 
     outline: 1px solid red;
@@ -220,8 +270,8 @@ COMPOSITION
     outline: 1px solid black;
 }
 .desc-item {
-    width: 400px;
-    margin-right: 60px;
+    width: 390px;
+    margin-right: 80px;
     float: left;
 
     outline: 1px solid red;
@@ -235,25 +285,25 @@ COMPOSITION
 PAGE CATALOG PAGE
 *************************************/
 .main-forms {
-    width: 220px;
-    /* margin-right: 20px; */
+    width: 230px;
+    margin-right: 10px;
     float: left;
 
     outline: 1px solid red;
 }
 .card-items {
-    margin-bottom: 44px;
-    text-align: center;
+    margin-bottom: 40px;
 }
 .card-lists {
     width: 700px;
-    /* height: 600px; */
     float: right;
+    font-size: 0;
     outline: 1px solid red;
 }
 .item-card {
     width: 220px;
-    margin-right: 10px;
+    margin-right: 20px;
+    margin-bottom: 20px;
     display: inline-block;
     text-align: left;
 
@@ -262,13 +312,18 @@ PAGE CATALOG PAGE
 .item-card:nth-child(3n){
     margin-right: 0;
 }
-
+.item-card .item-card-title,
+.item-card .price {
+    font-size: 14px;
+}
 .pagination {
+    font-size: 0px;
     outline: 1px solid red;
 }
 .pagination li {
     display: inline-block;
     padding: 6px;
+    font-size: 14px;
 }
 /*************************************
 ITEM - BLOCK

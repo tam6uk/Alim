@@ -445,3 +445,11 @@ template {
 [hidden] {
   display: none;
 }
+/**
+ * Add for me.
+ */
+
+ ul {
+  padding: 0;
+  margin: 0;
+}

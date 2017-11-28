@@ -12,11 +12,10 @@
 </head>
 
 <body>
-<!-- HEADER -->
+	<!-- HEADER -->
 	<header class="main-header">
 		<div class="container clearfix">
 			<nav class="main-navigiation">
-
 				<ul>
 					<li>
 						<a href="#">Информация</a>
@@ -28,27 +27,26 @@
 						<a href="price-page.html">Прайс-лист</a>
 					</li>
 					<li>
-						<a href="catalog-page.html">Магазин</a>
+						<a href="shop-page.html">Магазин</a>
 					</li>
 					<li>
 						<a href="#">Контакты</a>
 					</li>
 				</ul>
-
 			</nav>
 			<div class="user-block">
 				<a class="login" href="#">Вход</a>
 			</div>
 		</div>
 	</header>
-<!-- MAIN -->
+	<!-- MAIN -->
 	<main class="main">
 		<div class="container">
 			<!-- LOGO SECTION -->
 			<div class="index-logo">
 				<img src="img/logo.png" alt="Барбершоп Бородинский" width="368" height="204">
 			</div>
-			<!-- FEATURES SRCTION -->
+			<!-- FEATURES SECTION -->
 			<div class="features clearfix">
 				<div class="features-item">
 					<b class="features-name">Быстро</b>
@@ -68,8 +66,7 @@
 			</div>
 			<!-- MAIN CONTENT -->
 			<div class="index-content clearfix">
-
-				<div class="index-content-left">
+				<div class="index-content-item">
 					<h2 class="index-content-title">Новости</h2>
 					<ul class="news-preview">
 						<li>
@@ -77,14 +74,14 @@
 							<time datetime="2016-01-11">11 января</time>
 						</li>
 						<li>
-							<p>В нашей команде поплнение, Борис "Бритва" Стригунцев, обладатель множества титулов и наград пополнил наши стройные ряды</p>
+							<p>В нашей команде поплнение, Борис "Бритва" Стригунцев, обладатель множества титулов и наград пополнил наши стройные
+								ряды</p>
 							<time datetime="2016-01-18">18 января</time>
 						</li>
 					</ul>
 					<a class="btn" href="#">Все новости</a>
 				</div>
-
-				<div class="index-content-right">
+				<div class="index-content-item">
 					<h2 class="index-content-title">Фотогалерея</h2>
 					<div class="gallery">
 						<figure class="gallery-content">
@@ -95,57 +92,62 @@
 					</div>
 				</div>
 			</div>
-
 			<div class="index-content clearfix">
-
-				<div class="index-content-left">
+				<div class="index-content-item">
 					<h2 class="index-content-title">Контактная информация</h2>
-					<p>
-						Барбершоп "Бородинский"<br>
-						Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
-						Телефон: +7 (812) 666-02-66</p>
-					<p>
-						Время работы:<br>
+					<p>Барбершоп "Бородинский"</p>
+					<p>Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8</p>
+					<p>Телефон: +7 (812) 666-02-66</p>
+					<p>Время работы:<br>
 						пн-пт: с 10:00 до 22:00<br>
 						сб-вс: с 10:00 до 19:00
 					</p>
 					<div class="index-content-btn">
-					<a class="btn btn-find-us" href="#">Как проехать</a>
-					<a class="btn btn-feedback" href="#">Обратная связь</a>
+						<a class="btn btn-find-us" href="#">Как проехать</a>
+						<a class="btn btn-feedback" href="#">Обратная связь</a>
 					</div>
 				</div>
-
-				<div class="index-content-right">
+				<div class="index-content-item">
 					<h2 class="index-content-title">Записаться</h2>
 					<p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
 					<form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
-						<input type="text" name="date" id="date" placeholder="08.10.2017">
-						<label for="date">Дата</label>
-						<input type="text" name="time" placeholder="10:00">
-						<label for="date">Время</label>
-						<input type="text" name="name" placeholder="Борода">
-						<label for="date">Ваше имя</label>
-						<input type="tel" name="phone" placeholder="+7 123 456-78-90">
-						<label for="date">Телефон</label>
+						<div class="input-wrap">
+							<label for="date">Дата</label>
+							<input type="text" name="date" id="date" placeholder="08.10.2017">
+						</div>
+						<div class="input-wrap">
+							<label for="date">Время</label>
+							<input type="text" name="time" placeholder="10:00">
+						</div>
+						<div class="input-wrap">
+							<label for="date">Ваше имя</label>
+							<input type="text" name="name" placeholder="Борода">
+						</div>
+						<div class="input-wrap">
+							<label for="date">Телефон</label>
+							<input type="tel" name="phone" placeholder="+7 123 456-78-90">
+						</div>
 						<button class="btn btn-submit" type="submit">Отправить</button>
 					</form>
 				</div>
 			</div>
 		</div>
-
 	</main>
 	<!-- FOOTER -->
 	<footer class="main-footer">
 		<div class="container clearfix">
 			<div class="footer-contacts">
+				<p>Барбершоп "Бородинский"</p>
+				<p>Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8</p>
 				<p>
-					Барбершоп "Бородинский"<br>
-					Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
-					<a href="#">Как нас найти?</a><br>
-					Телефон: +7 (812) 666-02-66
+					<a href="#">Как нас найти?</a>
+				</p>
+				<p>Телефон:
+					<a href="#">+7 (812) 666-02-66</a>
 				</p>
 			</div>
 			<div class="footer-social">
+				<p>Давайте дружить!</p>
 				<a class="social-btn social-btn-vk" href="#">Вконтакте</a>
 				<a class="social-btn social-btn-fb" href="#">Фейсбук</a>
 				<a class="social-btn social-btn-inst" href="#">Инстаграм</a>
@@ -162,11 +164,11 @@
 		<form class="enter-form" action="#" method="post">
 			<p class="enter-form-text">Введите пожалуйста свой логин и пароль</p>
 			<div class="enter-form-inputs">
-			<input type="text" id="login" name="enter-login" placeholder="Логин">
-			<input type="password" id="password" name="enter-pass" placeholder="Пароль">
-            <input type="checkbox" id="remember" name="enter-remember" checked>
-			<label for="remember">Запомните меня</label>
-			<a class="forgot-pass" href="#">Я забыл пароль!</a>
+				<input type="text" id="login" name="enter-login" placeholder="Логин">
+				<input type="password" id="password" name="enter-pass" placeholder="Пароль">
+				<input type="checkbox" id="remember" name="enter-remember" checked>
+				<label for="remember">Запомните меня</label>
+				<a class="forgot-pass" href="#">Я забыл пароль!</a>
 			</div>
 			<button class="btn btn-enter" type="submit" name="enter-submit">Войти</button>
 			<a class="close" href="#"></a>
@@ -174,9 +176,9 @@
 	</div>
 
 	<div class="popup-map">
-			<button class="popup-close" type="button">Закрыть</button>
-			<iframe src="https://yandex.ru/map-widget/v1/-/CVgJR079" width="780" height="570" frameborder="7"></iframe>
-		</div>
+		<button class="popup-close" type="button">Закрыть</button>
+		<iframe src="https://yandex.ru/map-widget/v1/-/CVgJR079" width="780" height="570"></iframe>
+	</div>
 
 	<script src="js/script.js"></script>
 </body>
