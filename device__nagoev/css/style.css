@@ -30,7 +30,7 @@ ul {
     padding: 0 20px;
     margin: 0 auto;
 
-    outline: 1px solid rgb(222, 94, 94);
+    /* outline: 1px solid rgb(222, 94, 94); */
 }
 /*************************************
 HEADER
@@ -272,11 +272,16 @@ POPULAR
 }
 /****************************************
 *****************************************/
-.tittles-wrap,
+.tittles-wrap {
+    background-image: linear-gradient(to right,#dbdbdb 50%,#ebebeb 50%);
+}
 .catalog-content {
-    background-color: #ebebeb;
+    /* background-color: #ebebeb; */
+    background-image: linear-gradient(to right,#eee 50%,#fff 50%);
     outline: 1px solid black;
 }
+
+
 .tittles-wrap .container,
 .catalog-content .container {
     padding-left: 0;
