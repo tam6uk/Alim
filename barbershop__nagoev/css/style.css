@@ -12,13 +12,15 @@ body {
 *, *::before,*::after {
     box-sizing: border-box;
 }
-.clearfix:after,
+/* .clearfix:after,
 .clearfix:before {
 	content: " ";
 	display: block;
-}
+} */
 .clearfix:after {
-	clear: both;
+    clear: both;
+    content: " ";
+	display: block;
 }
 .container {
     width: 960px;
@@ -31,31 +33,26 @@ body {
 HEADER
 *************************************/
 .main-header {
-    /* для создания сетки */
     margin-bottom: 60px;
 }
-.main-header .container {
-    padding: 23px 10px;
-}
-.main-logo img {
-    display: block;
+.main-logo {
     width: 140px;
-    height: 28px;
+    float: left;
+    margin-right: 20px;
+
+    outline: 1px solid red;
+}
+.main-navigation {
+    max-width: 780px;
     float: left;
 
     outline: 1px solid red;
 }
-.main-navigiation {
-    width: 780px;
-    float: left;
-
-    outline: 1px solid red;
-}
-.main-navigiation li {
+.main-navigation li {
     list-style: none;
     display: inline-block;
 }
-.main-navigiation a,
+.main-navigation a,
 .login {
     font-size: 16px;
     line-height: 20px;
@@ -149,10 +146,30 @@ CONTENT-INDEX
 .gallery-content {
     margin: 0;
 }
+.appointment-form {
+    font-size: 0;
+}
+.input-wrap label {
+    display: block;
+    font-size: 14px;
+    line-height: 24px;
+}
+.input-wrap input[type="text"],
+.input-wrap input[type="tel"] {
+    font-size: 14px;
+    width: 140px;
+}
+
 .input-wrap {
     display: inline-block;
-    width: 100px;
     margin-right: 20px;
+}
+.input-wrap:nth-child(2n) {
+    margin-right: 0;
+}
+.btn-submit {
+    font-size: 14px;
+    line-height: 24px;
 }
 /*************************************
 FOOTER
@@ -167,7 +184,7 @@ FOOTER
 .footer-contacts {
     float: left;
     width: 320px;
-    margin-right: 60px;
+    margin-right: 80px;
 
     outline: 1px solid red;
 }
@@ -228,11 +245,25 @@ ITEM - IMG
 
     outline: 1px solid red;
 }
-.item-article {
-    padding-left: 10px;
-}
 .contents-list {
     list-style: none;
+}
+.item-imgs-big {
+    margin-bottom: 20px;
+    
+    outline: 1px solid black;
+}
+.imgs-row {
+    font-size: 0;
+}
+.item-imgs-small {
+    display: inline-block;
+    margin-right: 20px;
+    vertical-align: top;
+    outline: 1px solid black;
+}
+.item-imgs-small:last-child {
+    margin-right: 0;
 }
 /*************************************
 PAGE 3 PRICE PAGE
@@ -252,7 +283,6 @@ COMPOSITION
     width: 390px;
     float: left;
     margin-right: 80px;
-    padding-left: 10px;
 
     outline: 1px solid red;
 }
