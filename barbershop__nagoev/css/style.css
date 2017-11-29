@@ -1,0 +1,363 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+body {
+    font-size: 14px;
+    line-height: 24px;
+    color: #000000;
+    font-family: "PtSansNarrow", Arial, serif;
+}
+*, *::before,*::after {
+    box-sizing: border-box;
+}
+/* .clearfix:after,
+.clearfix:before {
+	content: " ";
+	display: block;
+} */
+.clearfix:after {
+    clear: both;
+    content: " ";
+	display: block;
+}
+.container {
+    width: 960px;
+    padding: 0 10px;
+    margin: 0 auto;
+
+    outline: 1px solid black;
+}
+/*************************************
+HEADER
+*************************************/
+.main-header {
+    margin-bottom: 60px;
+}
+.main-logo {
+    width: 140px;
+    float: left;
+    margin-right: 20px;
+
+    outline: 1px solid red;
+}
+.main-navigation {
+    max-width: 780px;
+    float: left;
+
+    outline: 1px solid red;
+}
+.main-navigation li {
+    list-style: none;
+    display: inline-block;
+}
+.main-navigation a,
+.login {
+    font-size: 16px;
+    line-height: 20px;
+    /* color: #ffffff; */
+    text-transform: uppercase;
+    text-decoration: none;
+
+}
+.user-block {
+    width: 140px;
+    float: right;
+    
+    outline: 1px solid red;
+}   
+
+/*************************************
+MAIN
+INDEX-LOGO
+*************************************/
+.index-logo {
+    margin-bottom: 25px;
+}
+.index-logo img{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+
+    outline: 1px solid red;
+}
+/*************************************
+FEATURES
+*************************************/
+.features {
+    margin-bottom: 80px;
+}
+.features-item {
+    width: 300px;
+    float: left;
+    margin-right: 20px;
+    text-align: center;
+    text-transform: uppercase;
+
+
+    /* Для сетки */
+    height: 175px;
+    outline: 1px solid red;
+}
+.features-item:last-child {
+    margin-right: 0;
+}
+.features-name {
+    font-size: 30px;
+    line-height: 40px;
+}
+/*************************************
+CONTENT-INDEX
+*************************************/
+.index-content {
+    margin-bottom: 35px;
+    padding: 50px 80px;
+    outline: 1px solid rgb(60, 59, 59);
+}
+.index-content:last-child {
+    margin-bottom: 0;
+}
+.index-content-item:first-child,
+.index-content-item:nth-child(3) {
+    width: 390px;
+    float: left;
+    margin-right: 90px;
+    outline: 1px solid red;
+}
+.index-content-item:nth-child(2),
+.index-content-item:last-child {
+    width: 300px;
+    float: right;
+
+    outline: 1px solid red;
+}
+.index-content-title {
+    font-size: 30px;
+    line-height: 40px;
+    text-transform: uppercase;
+}
+.news-preview {
+    list-style: none;
+}
+.btn-submit {
+    display: block;
+}
+.gallery-content {
+    margin: 0;
+}
+.appointment-form {
+    font-size: 0;
+}
+.input-wrap label {
+    display: block;
+    font-size: 14px;
+    line-height: 24px;
+}
+.input-wrap input[type="text"],
+.input-wrap input[type="tel"] {
+    font-size: 14px;
+    width: 140px;
+}
+
+.input-wrap {
+    display: inline-block;
+    margin-right: 20px;
+}
+.input-wrap:nth-child(2n) {
+    margin-right: 0;
+}
+.btn-submit {
+    font-size: 14px;
+    line-height: 24px;
+}
+/*************************************
+FOOTER
+*************************************/
+.main-footer {
+    margin-top: 66px;
+}
+.main-footer .container {
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+.footer-contacts {
+    float: left;
+    width: 320px;
+    margin-right: 80px;
+
+    outline: 1px solid red;
+}
+.footer-social {
+    text-align: center;
+    width: 140px;
+    float: left;
+
+    outline: 1px solid red;
+}
+.footer-copyright {
+    width: 140px;
+    float: right;
+
+    outline: 1px solid red;
+}  
+
+/*======================================
+ Map & LogIn
+=======================================*/
+.modal {
+    width: 460px;
+    height: 390px;
+    padding: 55px 80px;
+    margin: 50px auto;
+    outline: 1px solid black;
+}
+
+
+/*======================================
+ PAGE 2 (ITEM PAGE)
+=======================================*/
+/*************************************
+geading - breadcrumbs
+*************************************/
+.breadcrumbs li {
+    list-style: none;
+    display: inline-block;
+}
+/*************************************
+ITEM - BLOCK
+*************************************/
+.item-block {
+    outline: 1px solid black;
+}
+/*************************************
+ITEM - IMG
+*************************************/
+.item-imgs {
+    width: 460px;
+    float: left;
+
+    outline: 1px solid red;
+}
+.item-article {
+    width: 390px;
+    float: right;
+
+    outline: 1px solid red;
+}
+.contents-list {
+    list-style: none;
+}
+.item-imgs-big {
+    margin-bottom: 20px;
+    
+    outline: 1px solid black;
+}
+.imgs-row {
+    font-size: 0;
+}
+.item-imgs-small {
+    display: inline-block;
+    margin-right: 20px;
+    vertical-align: top;
+    outline: 1px solid black;
+}
+.item-imgs-small:last-child {
+    margin-right: 0;
+}
+/*************************************
+PAGE 3 PRICE PAGE
+*************************************/
+.classic {
+    font-size: 48px;
+    line-height: 48px;  
+    text-transform: uppercase;
+}
+/*************************************
+COMPOSITION
+*************************************/
+.price-items {
+    margin-bottom: 60px;
+}
+.composition {
+    width: 390px;
+    float: left;
+    margin-right: 80px;
+
+    outline: 1px solid red;
+}
+.composition-list {
+    list-style: none;
+}
+.price-table {
+    width: 470px;
+    float: right;
+
+    outline: 1px solid red;
+}
+
+.about-us {
+    outline: 1px solid black;
+}
+.desc-item {
+    width: 390px;
+    margin-right: 80px;
+    float: left;
+
+    outline: 1px solid red;
+}
+.desc-item:last-child {
+    width: 400px;
+    margin-right: 0;
+}
+
+/*************************************
+PAGE CATALOG PAGE
+*************************************/
+.main-forms {
+    width: 230px;
+    margin-right: 10px;
+    float: left;
+
+    outline: 1px solid red;
+}
+.card-items {
+    margin-bottom: 40px;
+}
+.card-lists {
+    width: 700px;
+    float: right;
+    font-size: 0;
+    outline: 1px solid red;
+}
+.item-card {
+    width: 220px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    display: inline-block;
+    text-align: left;
+
+    outline: 1px solid blue;
+}
+.item-card:nth-child(3n){
+    margin-right: 0;
+}
+.item-card .item-card-title,
+.item-card .price {
+    font-size: 14px;
+}
+.pagination {
+    font-size: 0px;
+    outline: 1px solid red;
+}
+.pagination li {
+    display: inline-block;
+    padding: 6px;
+    font-size: 14px;
+}
+/*************************************
+ITEM - BLOCK
+*************************************/
+/*************************************
+ITEM - BLOCK
+*************************************/
