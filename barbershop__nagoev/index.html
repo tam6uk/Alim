@@ -11,10 +11,10 @@
 	<title>Барбершоп "Бородинский"</title>
 </head>
 
-<body>
+<body class="main-body">
 	<!-- HEADER -->
 	<header class="main-header">
-		<div class="container clearfix">
+		<div class="container flex-container">
 			<nav class="main-navigation">
 				<ul>
 					<li>
@@ -47,7 +47,7 @@
 				<img src="img/logo.png" alt="Барбершоп Бородинский" width="368" height="204">
 			</div>
 			<!-- FEATURES SECTION -->
-			<div class="features clearfix">
+			<div class="features">
 				<div class="features-item">
 					<b class="features-name">Быстро</b>
 					<p>Мы делаем свою работу быстро! Два часа пролетят незаметно и вы - счастливый обладатель стильной стрижки-минутки!</p>
@@ -65,21 +65,21 @@
 				</div>
 			</div>
 			<!-- MAIN CONTENT -->
-			<div class="index-content clearfix">
+			<div class="index-content">
 				<div class="index-content-item">
 					<h2 class="index-content-title">Новости</h2>
 					<ul class="news-preview">
 						<li>
-							<p>Нам наконец завезли ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки</p>
+							<a href="#"><p>Нам наконец завезли ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки</p></a>
 							<time datetime="2016-01-11">11 января</time>
 						</li>
 						<li>
-							<p>В нашей команде поплнение, Борис "Бритва" Стригунцев, обладатель множества титулов и наград пополнил наши стройные
-								ряды</p>
+							<a href="#"><p>В нашей команде поплнение, Борис "Бритва" Стригунцев, обладатель множества титулов и наград пополнил наши стройные
+								ряды</p></a>
 							<time datetime="2016-01-18">18 января</time>
 						</li>
 					</ul>
-					<a class="btn" href="#">Все новости</a>
+					<a class="btn btn-news" href="#">Все новости</a>
 				</div>
 				<div class="index-content-item">
 					<h2 class="index-content-title">Фотогалерея</h2>
@@ -87,12 +87,14 @@
 						<figure class="gallery-content">
 							<img src="img/interior-1.jpg" alt="" width="286" height="164">
 						</figure>
-						<button class="btn gallery-prev">Назад</button>
-						<button class="btn gallery-next">Вперед</button>
+						<div class="gallery-btn">
+							<button class="btn gallery-prev">Назад</button>
+							<button class="btn gallery-next">Вперед</button>
+						</div>
 					</div>
 				</div>
 			</div>
-			<div class="index-content clearfix">
+			<div class="index-content">
 				<div class="index-content-item">
 					<h2 class="index-content-title">Контактная информация</h2>
 					<p>Барбершоп "Бородинский"</p>
@@ -111,14 +113,19 @@
 					<h2 class="index-content-title">Записаться</h2>
 					<p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
 					<form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
-						<div class="input-wrap">
-							<label for="date">Дата</label>
-							<input type="text" name="date" id="date" placeholder="08.10.2017">
-						</div>
+						<div class="flex-input">
+							<div class="input-wrap">
+								<label for="date">Дата</label>
+								<input type="text" name="date" id="date" placeholder="08.10.2017">
+							</div>
+						
+						
 						<div class="input-wrap">
 							<label for="time">Время</label>
 							<input type="text" name="time" id="time" placeholder="10:00">
 						</div>
+					</div>
+					<div class="flex-input">
 						<div class="input-wrap">
 							<label for="name">Ваше имя</label>
 							<input type="text" name="name" id="name" placeholder="Борода">
@@ -127,6 +134,7 @@
 							<label for="phone">Телефон</label>
 							<input type="tel" name="phone" id="phone" placeholder="+7 123 456-78-90">
 						</div>
+					</div>
 						<button class="btn btn-submit" type="submit">Отправить</button>
 					</form>
 				</div>
@@ -135,7 +143,7 @@
 	</main>
 	<!-- FOOTER -->
 	<footer class="main-footer">
-		<div class="container clearfix">
+		<div class="container flex-container">
 			<div class="footer-contacts">
 				<p>Барбершоп "Бородинский"</p>
 				<p>Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8</p>
@@ -154,7 +162,7 @@
 			</div>
 			<div class="footer-copyright">
 				<p>Разработано:</p>
-				<a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
+				<a class="btn btn-copyright" href="https://htmlacademy.ru">HTML Academy</a>
 			</div>
 		</div>
 	</footer>

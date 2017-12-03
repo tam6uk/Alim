@@ -14,13 +14,13 @@
 <body>
 	<!-- HEADER -->
 	<header class="header">
-		<div class="container clearfix">
+		<div class="container">
 			<!-- LOGO -->
 			<div class="header-logo">
 				<img src="img/logo.svg" alt="Логотип" width="164" height="36">
 			</div>
 
-			<div class="header-top clearfix">
+			<div class="header-top">
 				<!-- FORM-SEARCH -->
 				<form action="#" method="post" class="search">
 					<input id="input" type="search" name="search" placeholder="Поиск по сайту">
@@ -34,34 +34,34 @@
 				</div>
 			</div>
 
-			<div class="header-bottom clearfix">
+			<div class="header-bottom">
 				<!--MENU -SUBMENU -->
-				<div class="submenu-dropdown clearfix">
+				<div class="submenu-dropdown">
 
 					<a href="catalog-page.html">Каталог товаров</a>
 
 					<div class="dropdown-menu">
 						<ul class="dropdown-list">
-							<li class="list-item">
+							<li class="dropdown-list-item">
 								<a href="#">Виртуальная реальность</a>
 							</li>
-							<li class="list-item">
+							<li class="dropdown-list-item">
 								<a href="catalog-page.html">Моноподы для селфи</a>
 							</li>
-							<li class="list-item">
+							<li class="dropdown-list-item">
 								<a href="#">Экшн-камеры</a>
 							</li>
 						</ul>
 						<ul class="dropdown-list">
-							<li class="list-item">
+							<li class="dropdown-list-item">
 								<a href="#">Фитнесс-браслеты</a>
 							</li>
-							<li class="list-item">
+							<li class="dropdown-list-item">
 								<a href="#">Умные часы</a>
 							</li>
 						</ul>
 						<ul class="dropdown-list">
-							<li class="list-item">
+							<li class="dropdown-list-item">
 								<a href="#">Квадрокоптеры</a>
 							</li>
 						</ul>
@@ -87,26 +87,33 @@
 
 	<!-- MAIN -->
 	<main class="main">
-		<div class="container clearfix">
+		<div class="container">
 			<!-- SLIDER SECTION -->
-			<div class="slider clearfix">
-				<!-- SLIDER-CONTROL -->
+			<div class="slider">
+
 				<input type="radio" id="btn-1" name="toggle" checked>
 				<input type="radio" id="btn-2" name="toggle">
 				<input type="radio" id="btn-3" name="toggle">
+
+
 				<div class="slider-controls">
 					<label for="btn-1"></label>
 					<label for="btn-2"></label>
 					<label for="btn-3"></label>
 				</div>
+
 				<!-- SLIDER-ITEMS -->
 				<div class="slides">
-					<div class="slide-item clearfix">
+
+					<div class="slide-item">
+
 						<div class="slide-img">
-							<img src="img/slider-image1.png" alt="Фитнесс-браслет">
+							<img src="img/slider-image1.png" alt="Селфи палка" width="385" height="485">
 						</div>
+
 						<div class="slider-content">
-							<h2 class="slider-title">Делай селфи, как Бен Стиллер!</h2>
+							<h2 class="slider-title">Делай селфи,
+								<br> как Бен Стиллер!</h2>
 							<p class="slider-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
 							<a class="slider-btn" href="#">Подробнее</a>
 							<ul class="slider-option--list">
@@ -124,13 +131,16 @@
 								</li>
 							</ul>
 						</div>
+
 					</div>
-					<div class="slide-item clearfix">
+
+					<div class="slide-item">
 						<div class="slide-img">
-							<img src="img/slider-image2.png" alt="Фитнесс-браслет">
+							<img src="img/slider-image2.png" alt="Фитнесс-браслет" width="345" height="485">
 						</div>
 						<div class="slider-content">
-							<h2 class="slider-title">Худеем правильно!</h2>
+							<h2 class="slider-title">Худеем
+								<br> правильно!</h2>
 							<p class="slider-description">Мотивирующие фитнесс-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
 							<a class="slider-btn" href="#">Подробнее</a>
 							<ul class="slider-option--list">
@@ -142,13 +152,14 @@
 						</div>
 					</div>
 
-					<div class="slide-item clearfix">
+					<div class="slide-item">
 						<div class="slide-img">
-							<img src="img/slider-image3.png" alt="Квадрокоптер">
+							<img src="img/slider-image3.png" alt="Квадрокоптер" width="526" height="334">
 						</div>
 						<div class="slider-content">
 							<h2 class="slider-title">Порхает как бабочка, жалит как пчела!</h2>
-							<p class="slider-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+							<p class="slider-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
+							</p>
 							<a class="slider-btn" href="#">Подробнее</a>
 							<ul class="slider-option--list">
 								<li class="list-item">
@@ -163,6 +174,8 @@
 						</div>
 					</div>
 				</div>
+
+
 			</div>
 
 			<!-- POPULAR SECTION -->
@@ -205,46 +218,46 @@
 				</a>
 			</div>
 			<!-- SERVICES SECTION -->
-				<div class="services clearfix">
-					<!-- SERVICES CONTROLS -->
-					<div class="service-tab-control">
-						<ul>
-							<li>
-								<a class="service-btn service-btn-active" href="#tab1"></a>Доставка</li>
-							<li>
-								<a class="service-btn" href="#tab2"></a>Гарантия</li>
-							<li>
-								<a class="service-btn" href="#tab3"></a>Качество</li>
-						</ul>
+			<div class="services">
+				<!-- SERVICES CONTROLS -->
+				<div class="service-tab-control">
+					<ul>
+						<li>
+							<a class="service-btn service-btn-active" href="#tab1"></a>Доставка</li>
+						<li>
+							<a class="service-btn" href="#tab2"></a>Гарантия</li>
+						<li>
+							<a class="service-btn" href="#tab3"></a>Качество</li>
+					</ul>
+				</div>
+				<!-- SERVICES SLIDES -->
+				<div class="service-tabs">
+
+					<div class="services-item active-tab" id="tab1">
+						<div class="service-content">
+							<h2 class="service-title">Доставка</h2>
+							<p class="service-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая
+								его на ваш этаж.</p>
+						</div>
 					</div>
-					<!-- SERVICES SLIDES -->
-					<div class="service-tabs">
 
-						<div class="services-item active-tab" id="tab1">
-							<div class="service-content">
-								<h2 class="service-title">Доставка</h2>
-								<p class="service-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая
-									его на ваш этаж.</p>
-							</div>
+					<div class="services-item" id="tab2">
+						<div class="service-content">
+							<h2 class="service-title">Гарантия</h2>
+							<p class="service-text">Если из-за возгарания купленного у нас товара у вас сгорит дом не переживайте, мы выдадим вам новый.
+								<br> Товар, не дом, конечно же.</p>
 						</div>
+					</div>
 
-						<div class="services-item" id="tab2">
-							<div class="service-content">
-								<h2 class="service-title">Гарантия</h2>
-								<p class="service-text">Если из-за возгарания купленного у нас товара у вас сгорит дом не переживайте, мы выдадим вам новый.
-									<br> Товар, не дом, конечно же.</p>
-							</div>
-						</div>
-
-						<div class="services-item" id="tab3">
-							<div class="service-content">
-								<h2 class="service-title">Кредит</h2>
-								<p class="service-text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные
-									для нашего банка, разумеется.</p>
-							</div>
+					<div class="services-item" id="tab3">
+						<div class="service-content">
+							<h2 class="service-title">Кредит</h2>
+							<p class="service-text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные
+								для нашего банка, разумеется.</p>
 						</div>
 					</div>
 				</div>
+			</div>
 			<!-- PARTNERS -->
 			<div class="partners">
 				<a class="partners-logo partners-logo--dji" href="#">
@@ -261,7 +274,7 @@
 				</a>
 			</div>
 			<!-- ABOUT US SECTION -->
-			<div class="about-us clearfix">
+			<div class="about-us">
 				<div class="about-us-info">
 					<h2 class="about-us-title">О нас</h2>
 					<p class="about-us-text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
@@ -279,7 +292,7 @@
 					<p class="about-us-text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
 					</p>
 					<div class="about-us-map">
-							<iframe></iframe>
+						<iframe></iframe>
 					</div>
 					<a class="btn write-us-btn" href="#">Напишите нам</a>
 				</div>
@@ -288,7 +301,7 @@
 	</main>
 	<!-- MAIN-FOOTER -->
 	<footer class="main-footer">
-		<div class="container clearfix">
+		<div class="container footer-wrap">
 
 			<div class="footer-company">
 				<div class="footer-logo">

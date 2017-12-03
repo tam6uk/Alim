@@ -13,7 +13,7 @@
 <body>
     <!-- HEADER -->
     <header class="main-header">
-        <div class="container clearfix">
+        <div class="container flex-container">
                 <a class="main-logo" href="index.html">
                     <img src="img/logo-ico.png" width="114" height="29" alt="Барбершоп Бородинский">
                 </a>
@@ -43,7 +43,7 @@
     </header>
     <!-- MAIN -->
     <main class="main">
-        <div class="container clearfix">
+        <div class="container">
             <h1 class="catalog-title">
                 Средства для ухода
             </h1>
@@ -62,7 +62,9 @@
                 </ul>
             </nav>
             <!-- FORM SECTION -->
-            <div class="main-forms clearfix">
+            <div class="flex-container">
+
+            <div class="main-forms">
                 <form action="#" method="post">
                     <fieldset class="manufacture">
                         <legend class="form-title">Производители</legend>
@@ -94,11 +96,11 @@
                     <fieldset class="product-groups">
                         <legend class="form-title">Группы товаров:</legend>
                         <div class="product-groups-input-wrap">
-                            <input id="r1" type="radio" name="cat-radio-1st" checked>
+                            <input id="r1" type="radio" name="cat-radio-1st">
                             <label for="r1">Бритвенные принадлежности</label>
                         </div>
                         <div class="product-groups-input-wrap">
-                            <input id="r2" type="radio" name="cat-radio-2nd">
+                            <input id="r2" type="radio" name="cat-radio-2nd" checked>
                             <label for="r2">Средства для ухода</label>
                         </div>
                         <div class="product-groups-input-wrap">
@@ -110,7 +112,7 @@
                 </form>
             </div>
             <!-- CARDS SECTION -->
-            <div class="card-lists clearfix">
+            <div class="card-lists">
                 <div class="card-items">
 
                     <div class="item-card">
@@ -122,11 +124,11 @@
                         <div class="item-card-description">
                             <a class="item-card-title" href="item-page.html">
                                 <p>Набор для путешествий</p>
-                                <p>Baxter of California</p>
+                                <p>&#171;Baxter of California&#187; </p>
                             </a>
                             <div class="price">
                                 <p class="price-text">2 900 &#8381;</p>
-                                <a class="price-btn" href="item-page.html">купить</a>
+                                <a class="btn price-btn" href="item-page.html">купить</a>
                             </div>
                         </div>
                     </div>
@@ -139,11 +141,11 @@
                         <div class="item-card-description">
                             <a class="item-card-title" href="item-page.html">
                                 <p>Увлажняющий кондиционер</p>
-                                <p>Baxter of California</p>
+                                <p>&#171;Baxter of California&#187; </p>
                             </a>
                             <div class="price">
                                 <p class="price-text">750 &#8381;</p>
-                                <a class="price-btn" href="#">купить</a>
+                                <a class="btn price-btn" href="#">купить</a>
                             </div>
                         </div>
                     </div>
@@ -156,11 +158,11 @@
                         <div class="item-card-description">
                             <a class="item-card-title" href="item-page.html">
                                 <p>Гель для волос</p>
-                                <p>Suavecito</p>
+                                <p>&#171;Suavecito&#187; </p>
                             </a>
                             <div class="price">
                                 <p class="price-text">290 &#8381;</p>
-                                <a class="price-btn" href="#">купить</a>
+                                <a class="btn price-btn" href="#">купить</a>
                             </div>
                         </div>
                     </div>
@@ -173,11 +175,11 @@
                         <div class="item-card-description">
                             <a class="item-card-title" href="item-page.html">
                                 <p>Глина для укладки волос</p>
-                                <p>American crew</p>
+                                <p>&#171;American crew&#187; </p>
                             </a>
                             <div class="price">
                                 <p class="price-text">500 &#8381;</p>
-                                <a class="price-btn" href="#">купить</a>
+                                <a class="btn price-btn" href="#">купить</a>
                             </div>
                         </div>
                     </div>
@@ -190,11 +192,11 @@
                         <div class="item-card-description">
                             <a class="item-card-title" href="item-page.html">
                                 <p>Гель для волос</p>
-                                <p>American crew</p>
+                                <p>&#171;American crew&#187; </p>
                             </a>
                             <div class="price">
                                 <p class="price-text">300 &#8381;</p>
-                                <a class="price-btn" href="#">купить</a>
+                                <a class="btn price-btn" href="#">купить</a>
                             </div>
                         </div>
                     </div>
@@ -207,17 +209,17 @@
                         <div class="item-card-description">
                             <a class="item-card-title" href="item-page.html">
                                 <p>Набор для бритья</p>
-                                <p>Baxter of California</p>
+                                <p>&#171;Baxter of California&#187; </p>
                             </a>
                             <div class="price">
                                 <p class="price-text">3 900 &#8381;</p>
-                                <a class="price-btn" href="#">купить</a>
+                                <a class="btn price-btn" href="#">купить</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <!-- PAGINATION SECTION -->
-                <div class="pagination clearfix">
+                <div class="pagination">
                     <ul>
                         <li class="pagination-item">
                             <a href="#">1</a>
@@ -235,10 +237,11 @@
                 </div>
             </div>
         </div>
+        </div>
     </main>
     <!-- FOOTER -->
     <footer class="main-footer">
-        <div class="container clearfix">
+        <div class="container flex-container">
             <div class="footer-contacts">
                 <p>Барбершоп "Бородинский"</p>
                 <p>Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8</p>
