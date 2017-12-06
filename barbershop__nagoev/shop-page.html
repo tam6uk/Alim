@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/fonts.css">
+    <!-- <link rel="stylesheet" href="css/fonts.css"> -->
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Каталог товаров</title>
@@ -57,7 +58,7 @@
                         <a href="#">Магазин</a>
                     </li>
                     <li class="breadcrumbs-item">
-                        <a href="#">Средства для ухода</a>
+                        <a class="current">Средства для ухода</a>
                     </li>
                 </ul>
             </nav>
@@ -96,15 +97,15 @@
                     <fieldset class="product-groups">
                         <legend class="form-title">Группы товаров:</legend>
                         <div class="product-groups-input-wrap">
-                            <input id="r1" type="radio" name="cat-radio-1st">
+                            <input id="r1" type="radio" name="cat-radio">
                             <label for="r1">Бритвенные принадлежности</label>
                         </div>
                         <div class="product-groups-input-wrap">
-                            <input id="r2" type="radio" name="cat-radio-2nd" checked>
+                            <input id="r2" type="radio" name="cat-radio" checked>
                             <label for="r2">Средства для ухода</label>
                         </div>
                         <div class="product-groups-input-wrap">
-                            <input id="r3" type="radio" name="cat-radio-3rd">
+                            <input id="r3" type="radio" name="cat-radio">
                             <label for="r3">Аксессуары</label>
                         </div>
                     </fieldset>
@@ -239,31 +240,31 @@
         </div>
         </div>
     </main>
-    <!-- FOOTER -->
-    <footer class="main-footer">
-        <div class="container flex-container">
-            <div class="footer-contacts">
-                <p>Барбершоп "Бородинский"</p>
-                <p>Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8</p>
-                <p>
-                    <a href="#">Как нас найти?</a>
-                </p>
-                <p>Телефон:
-                    <a href="#">+7 (812) 666-02-66</a>
-                </p>
-            </div>
-            <div class="footer-social">
-                <p>Давайте дружить!</p>
-                <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-                <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-                <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-            </div>
-            <div class="footer-copyright">
-                <p>Разработано:</p>
-                <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
-            </div>
-        </div>
-    </footer>
+  <!-- FOOTER -->
+	<footer class="main-footer">
+		<div class="container flex-container">
+			<div class="footer-contacts">
+				<p>Барбершоп "Бородинский"</p>
+				<p>Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8</p>
+				<p>
+					<a href="#">Как нас найти?</a>
+				</p>
+				<p>Телефон:
+					<a href="#">+7 (812) 666-02-66</a>
+				</p>
+			</div>
+			<div class="footer-social">
+				<p>Давайте дружить!</p>
+				<a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+				<a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+				<a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+			</div>
+			<div class="footer-copyright">
+				<p>Разработано:</p>
+				<a class="btn btn-copyright" href="https://htmlacademy.ru">HTML Academy</a>
+			</div>
+		</div>
+	</footer>
 
 </body>
 

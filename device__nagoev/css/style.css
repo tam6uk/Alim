@@ -28,9 +28,6 @@ a {
 #HEADER
 *************************************/
 
-.header .container {
-    padding: 20px 60px;
-}
 /* HEADER TOP */
 
 .header-top {
@@ -73,7 +70,6 @@ a {
 
 .dropdown-menu {
     display: flex;
-    justify-content: space-between;
 }
 .dropdown-list {
     list-style: none;
@@ -161,6 +157,8 @@ a {
     border-radius: 4px;
 }
 .slide-item {
+    padding-left: 60px;
+    padding-right: 60px;
     display: none;
 }
 #btn-1:checked~.slides .slide-item:nth-child(1) {
@@ -189,13 +187,11 @@ a {
 /* SLIDER ITEMS */
 
 .slide-img {
-    padding-left: 60px;
     width: 500px;
 }
 /* SLIDER CONTENT */
 
 .slider-content {
-    padding-right: 60px;
     width: 540px;
 }
 .slider-title {
@@ -270,7 +266,6 @@ a {
 }
 .popular-item {
     width: 160px;
-    margin-right: 40px;
 }
 .popular-img-wrap {
     background-color: #f7e296;
@@ -304,7 +299,6 @@ a {
     margin: 20px auto;
 }
 .partners-logo {
-    margin-right: 40px;
     width: 260px;
 }
 /****************************************
@@ -317,15 +311,14 @@ a {
     margin-bottom: 20px;
 }
 .about-us-info {
-    width: 480px;
+    width: 460px;
     margin-right: 100px;
-    padding-left: 20px;
 }
 .about-us-list {
     list-style: none;
 }
 .about-us-contacts {
-    width: 580px;
+    width: 560px;
 }
 .about-us-map {
     width: 560px;
@@ -342,7 +335,6 @@ a {
 }
 .footer-company {
     width: 300px;
-    margin-right: 60px;
 }
 .footer-middle {
     width: 440px;
@@ -428,36 +420,34 @@ a {
 
 .search-results {
     width: 832px;
-    font-size: 0px;
     padding-left: 70px;
     background-color: #fff;
 }
-.item-card {
-    display: inline-block;
-    width: 360px;
-    margin-right: 40px;
-    font-size: 14px;
+.item-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
-.item-card:nth-child(2n) {
-    margin-right: 0;
+.item-card {
+    width: 360px;
 }
 /* PASGINATION */
 .pagination {
-    outline: 1px solid black;
-}
-.catalog-nav {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    font-size: 0;
+    outline: 1px solid black;
+    width: 100%;
+}
+
+.nav-prev,
+.nav-next {
+    display: inline-block;
 }
 .catalog-nav li {
     list-style: none;
     display: inline-block;
 }
-.catalog-nav a {
-    font-size: 16px;
-}
+
 /****************************************
 #MODAL
 *****************************************/
