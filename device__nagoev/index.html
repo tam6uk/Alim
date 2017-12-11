@@ -14,11 +14,11 @@
 <body>
 	<!-- HEADER -->
 	<header class="header">
-		<div class="container">
+		<div class="container layer">
 			<!-- LOGO -->
-			<div class="header-logo">
-				<img src="img/logo.svg" alt="Логотип" width="164" height="36">
-			</div>
+			<a class="header-logo">
+				<img class="logo" src="img/logo.svg" alt="Логотип" width="164" height="36">
+			</a>
 
 			<div class="header-top">
 				<!-- FORM-SEARCH -->
@@ -28,7 +28,7 @@
 				</form>
 				<!-- USER-BLOCK -->
 				<div class="user-block">
-					<a href="#" class="login">Вход</a>
+					<a href="#" class="login">Войти</a>
 					<a href="#" class="compare">Сравнить</a>
 					<a href="#" class="cart">Корзина</a>
 				</div>
@@ -38,7 +38,7 @@
 				<!--MENU -SUBMENU -->
 				<div class="submenu-dropdown">
 
-					<a href="catalog-page.html">Каталог товаров</a>
+					<a class="submenu-dropdown-link" href="catalog-page.html">Каталог товаров</a>
 
 					<div class="dropdown-menu">
 						<ul class="dropdown-list">
@@ -54,7 +54,7 @@
 						</ul>
 						<ul class="dropdown-list">
 							<li class="dropdown-list-item">
-								<a href="#">Фитнесс-браслеты</a>
+								<a href="#">Фитнес-браслеты</a>
 							</li>
 							<li class="dropdown-list-item">
 								<a href="#">Умные часы</a>
@@ -112,6 +112,7 @@
 						</div>
 
 						<div class="slider-content">
+							<div class="slider-number">01</div>
 							<h2 class="slider-title">Делай селфи,
 								<br> как Бен Стиллер!</h2>
 							<p class="slider-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
@@ -139,9 +140,10 @@
 							<img src="img/slider-image2.png" alt="Фитнесс-браслет" width="345" height="485">
 						</div>
 						<div class="slider-content">
+							<div class="slider-number">02</div>
 							<h2 class="slider-title">Худеем
 								<br> правильно!</h2>
-							<p class="slider-description">Мотивирующие фитнесс-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+							<p class="slider-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
 							<a class="slider-btn" href="#">Подробнее</a>
 							<ul class="slider-option--list">
 								<li class="list-item">
@@ -157,6 +159,7 @@
 							<img src="img/slider-image3.png" alt="Квадрокоптер" width="526" height="334">
 						</div>
 						<div class="slider-content">
+							<div class="slider-number">03</div>
 							<h2 class="slider-title">Порхает как бабочка, жалит как пчела!</h2>
 							<p class="slider-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
 							</p>
@@ -202,7 +205,7 @@
 					<div class="popular-img-wrap">
 						<img class="popular-img" src="img/popular-4.png" width="160" height="160" alt="Популярные товары - фитнесс браслеты">
 					</div>
-					<span class="popular-text">Фитнесс браслеты</span>
+					<span class="popular-text">Фитнес-браслеты</span>
 				</a>
 				<a class="popular-item" href="#">
 					<div class="popular-img-wrap">
@@ -217,60 +220,61 @@
 					<span class="popular-text">Квадрокоптеры</span>
 				</a>
 			</div>
-			<!-- SERVICES SECTION -->
-			<div class="services">
-				<!-- SERVICES CONTROLS -->
-				<div class="service-tab-control">
-					<ul>
-						<li>
-							<a class="service-btn service-btn-active" href="#tab1"></a>Доставка</li>
-						<li>
-							<a class="service-btn" href="#tab2"></a>Гарантия</li>
-						<li>
-							<a class="service-btn" href="#tab3"></a>Качество</li>
-					</ul>
+
+
+		</div>
+		<!-- SERVICES SECTION -->
+		<div class="service">
+			<div class="container service-container">
+
+				<input type="radio" name="slider-tab" id="check1" checked>
+				<input type="radio" name="slider-tab" id="check2">
+				<input type="radio" name="slider-tab" id="check3">
+
+				<div class="sliders-controls">
+					<label for="check1">Доставка</label>
+					<label for="check2">Гарантия</label>
+					<label for="check3">Кредит</label>
 				</div>
-				<!-- SERVICES SLIDES -->
-				<div class="service-tabs">
+				<div class="service-slider">
 
-					<div class="services-item active-tab" id="tab1">
-						<div class="service-content">
-							<h2 class="service-title">Доставка</h2>
-							<p class="service-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая
-								его на ваш этаж.</p>
-						</div>
+					<div class="slider-tab slide1">
+						<h2 class="slider-tab-head">Доставка</h2>
+						<p class="slider-tab-desc">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая
+							его на ваш этаж.</p>
 					</div>
 
-					<div class="services-item" id="tab2">
-						<div class="service-content">
-							<h2 class="service-title">Гарантия</h2>
-							<p class="service-text">Если из-за возгарания купленного у нас товара у вас сгорит дом не переживайте, мы выдадим вам новый.
-								<br> Товар, не дом, конечно же.</p>
-						</div>
+					<div class="slider-tab slide2">
+						<h2 class="slider-tab-head">Гарантия</h2>
+						<p class="slider-tab-desc">Если из-за возгарания купленного у нас товара у вас сгорит дом не переживайте, мы выдадим вам новый. Товар, не дом,
+							конечно же.
+						</p>
 					</div>
 
-					<div class="services-item" id="tab3">
-						<div class="service-content">
-							<h2 class="service-title">Кредит</h2>
-							<p class="service-text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные
-								для нашего банка, разумеется.</p>
-						</div>
+					<div class="slider-tab slide3">
+						<h2 class="slider-tab-head">Кредит</h2>
+						<p class="slider-tab-desc">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные
+							для нашего банка, разумеется.</p>
 					</div>
+
 				</div>
 			</div>
-			<!-- PARTNERS -->
+
+		</div>
+		<!-- PARTNERS -->
+		<div class="container">
 			<div class="partners">
 				<a class="partners-logo partners-logo--dji" href="#">
-					<img src="img/logo-dji--grayscale.png" width="260" height="100" alt="Логотип партнеров-dji">
+					<!-- <img src="img/logo-dji--grayscale.png" width="260" height="100" alt="Логотип партнеров-dji"> -->
 				</a>
 				<a class="partners-logo partners-logo--sp-gadjets" href="#">
-					<img src="img/logo-spgadgets---grayscale.png" width="260" height="100" alt="Логотип партнеров-sp-gadjets">
+					<!-- <img src="img/logo-spgadgets---grayscale.png" width="260" height="100" alt="Логотип партнеров-sp-gadjets"> -->
 				</a>
 				<a class="partners-logo partners-logo--gopro" href="#">
-					<img src="img/logo-gopro--grayscale.png" width="260" height="100" alt="Логотип партнеров-gopro">
+					<!-- <img src="img/logo-gopro--grayscale.png" width="260" height="100" alt="Логотип партнеров-gopro"> -->
 				</a>
 				<a class="partners-logo partners-logo--vive" href="#">
-					<img src="img/logo-vive--grayscale.png" width="260" height="100" alt="Логотип партнеров-vive">
+					<!-- <img src="img/logo-vive--grayscale.png" width="260" height="100" alt="Логотип партнеров-vive"> -->
 				</a>
 			</div>
 			<!-- ABOUT US SECTION -->
@@ -280,9 +284,9 @@
 					<p class="about-us-text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
 					<p class="about-us-text">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
 					<ul class="about-us-list">
-						<li class="about-us-list list-item">Деловые Линии</li>
-						<li class="about-us-list list-item">Автотрейдинг</li>
-						<li class="about-us-list list-item">ЖелДорЭкспедиция</li>
+						<li class="about-us-list-item">Деловые Линии</li>
+						<li class="about-us-list-item">Автотрейдинг</li>
+						<li class="about-us-list-item">ЖелДорЭкспедиция</li>
 					</ul>
 					<a class="btn about-us--btn" href="#">Подробнее о нас</a>
 				</div>
@@ -294,7 +298,7 @@
 					<div class="about-us-map">
 						<iframe></iframe>
 					</div>
-					<a class="btn write-us-btn" href="#">Напишите нам</a>
+					<a class="btn write-us--btn" href="#">Напишите нам</a>
 				</div>
 			</div>
 		</div>
@@ -325,14 +329,14 @@
 					</ul>
 				</nav>
 				<div class="footer-social">
-					<a href="#" class="social-btn social-btn-vk">Вконтакте</a>
 					<a href="#" class="social-btn social-btn-fb">Фейсбук</a>
 					<a href="#" class="social-btn social-btn-inst">Инстаграм</a>
+					<a href="#" class="social-btn social-btn-tw">Твиттер</a>
 				</div>
 			</div>
 			<div class="footer-contacts">
 				<div class="user-block">
-					<a class="login enter" href="#">Вход</a>
+					<a class="login enter" href="#">Войти</a>
 					<a class="compare" href="#">Сравнить</a>
 					<a class="cart" href="#">Корзина</a>
 				</div>

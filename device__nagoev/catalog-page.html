@@ -14,10 +14,10 @@
 <body>
 	<!-- HEADER -->
 	<header class="header">
-		<div class="container">
+		<div class="container layer">
 			<!-- LOGO -->
-			<a class="main-logo" href="index.html">
-				<img src="img/logo.svg" alt="Логотип" width="164" height="36">
+			<a class="header-logo" href="index.html">
+				<img class="logo" src="img/logo.svg" alt="Логотип" width="164" height="36">
 			</a>
 
 			<div class="header-top">
@@ -37,7 +37,7 @@
 			<div class="header-bottom">
 				<!--MENU -SUBMENU -->
 				<div class="submenu-dropdown">
-					<a href="catalog-page.html">Каталог товаров</a>
+					<a class="submenu-dropdown-link" href="catalog-page.html">Каталог товаров</a>
 					<div class="dropdown-menu">
 						<ul class="dropdown-list">
 							<li class="dropdown-list-item">
@@ -123,7 +123,7 @@
 					</div>
 
 					<div class="catalog-sort-direction">
-						<a class="btn-up" href="#">up</a>
+						<a class="btn-up">up</a>
 						<a class="btn-down current">down</a>
 					</div>
 				</div>
@@ -137,7 +137,7 @@
 				<!-- FORM SECTION -->
 				<div class="catalog-filter">
 					<form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
-						<fieldset>
+						<fieldset class="cost">
 							<legend class="form-legend">Стоимость</legend>
 							<div class="range-controls">
 								<div class="scale">
@@ -152,31 +152,42 @@
 							</div>
 						</fieldset>
 
-						<fieldset>
+						<fieldset class="color">
 							<legend class="form-legend">Цвет</legend>
-							<input class="filter-checkbox" type="checkbox" name="black" id="black" checked>
-							<label for="black">Черный</label>
-							<br>
-							<input class="filter-checkbox" type="checkbox" name="white" id="white">
-							<label for="white">Белый</label>
-							<br>
-							<input class="filter-checkbox" type="checkbox" name="blue" id="blue" checked>
-							<label for="blue">Синий</label>
-							<br>
-							<input class="filter-checkbox" type="checkbox" name="red" id="red" checked>
-							<label for="red">Красный</label>
-							<br>
-							<input class="filter-checkbox" type="checkbox" name="pink" id="pink">
-							<label for="pink">Розовый</label>
+							<div class="input-wrap">
+								<input class="filter-checkbox" type="checkbox" name="black" id="black" checked>
+								<label for="black">Черный</label>
+							</div>
+							<div class="input-wrap">
+								<input class="filter-checkbox" type="checkbox" name="white" id="white">
+								<label for="white">Белый</label>
+							</div>
+							<div class="input-wrap">
+								<input class="filter-checkbox" type="checkbox" name="blue" id="blue" checked>
+								<label for="blue">Синий</label>
+							</div>
+							<div class="input-wrap">
+								<input class="filter-checkbox" type="checkbox" name="red" id="red" checked>
+								<label for="red">Красный</label>
+							</div>
+							<div class="input-wrap">
+								<input class="filter-checkbox" type="checkbox" name="pink" id="pink">
+								<label for="pink">Розовый</label>
+							</div>
 						</fieldset>
 
-						<fieldset>
+						<fieldset class="bluetooth">
 							<legend class="form-legend">Bluetooth</legend>
-							<input class="filter-radio" type="radio" value="Есть" name="bluetooth" id="bth-yes" checked>
-							<label for="bth-yes">Есть</label>
-							<br>
-							<input class="filter-radio" type="radio" value="Нет" name="bluetooth" id="bth-no">
-							<label for="bth-no">Нет</label>
+							<div class="input-wrap">
+								<input class="filter-radio" type="radio" value="Есть" name="bluetooth" id="bth-yes" checked>
+								<label for="bth-yes">Есть</label>
+							</div>
+
+							<div class="input-wrap">
+								<input class="filter-radio" type="radio" value="Нет" name="bluetooth" id="bth-no">
+								<label for="bth-no">Нет</label>
+							</div>
+
 						</fieldset>
 						<button class="device-btn" type="submit">Показать</button>
 					</form>
@@ -184,7 +195,7 @@
 
 				<!-- CATALOG SECTION -->
 				<div class="search-results">
-					
+
 					<div class="item-list">
 						<div class="item-card">
 							<div class="img-wrapper">
@@ -264,47 +275,50 @@
 	</main>
 
 	<!-- FOOTER -->
+	<!-- MAIN-FOOTER -->
 	<footer class="main-footer">
-		<div class="container footer-wrap">
-			<div class="footer-company">
-				<div class="footer-logo">
-					<img src="img/logo.svg" alt="Логотип" width="164" height="36">
+			<div class="container footer-wrap">
+	
+				<div class="footer-company">
+					<div class="footer-logo">
+						<img src="img/logo.svg" alt="Логотип" width="164" height="36">
+					</div>
+					<p class="company-address">г. Москва, ул. Строителей, 15</p>
 				</div>
-				<p class="company-address">г. Москва, ул. Строителей, 15</p>
-			</div>
-			<div class="footer-middle">
-				<nav class="menu">
-					<ul class="navigation">
-						<li class="navigation-item">
-							<a href="#">Доставка</a>
-						</li>
-						<li class="navigation-item">
-							<a href="#">Гарантия</a>
-						</li>
-						<li class="navigation-item">
-							<a href="#">Контакты</a>
-						</li>
-					</ul>
-				</nav>
-				<div class="footer-social">
-					<a href="#" class="social-btn social-btn-vk">Вконтакте</a>
-					<a href="#" class="social-btn social-btn-fb">Фейсбук</a>
-					<a href="#" class="social-btn social-btn-inst">Инстаграм</a>
+	
+				<div class="footer-middle">
+					<nav class="menu">
+						<ul class="navigation">
+							<li class="navigation-item">
+								<a href="#">Доставка</a>
+							</li>
+							<li class="navigation-item">
+								<a href="#">Гарантия</a>
+							</li>
+							<li class="navigation-item">
+								<a href="#">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="footer-social">
+						<a href="#" class="social-btn social-btn-fb">Фейсбук</a>
+						<a href="#" class="social-btn social-btn-inst">Инстаграм</a>
+						<a href="#" class="social-btn social-btn-tw">Твиттер</a>
+					</div>
+				</div>
+				<div class="footer-contacts">
+					<div class="user-block">
+						<a class="login exit" href="#">Выйти</a>
+						<a class="compare" href="#">Сравнить</a>
+						<a class="cart" href="#">Корзина</a>
+					</div>
+					<p class="phone-number">
+						<a href="#">Тел.: +7 (495) 495-95-95</a>
+					</p>
+					<a class="footer-copyright" href="https://htmlacademy.ru">htmlacademy.ru</a>
 				</div>
 			</div>
-			<div class="footer-contacts">
-				<div class="user-block">
-					<a class="exit" href="#">Выйти</a>
-					<a class="compare" href="#">Сравнить</a>
-					<a class="cart" href="#">Корзина</a>
-				</div>
-				<p class="phone-number">
-					<a href="#">Тел.: +7 (495) 495-95-95</a>
-				</p>
-				<a class="footer-copyright" href="https://htmlacademy.ru">htmlacademy.ru</a>
-			</div>
-		</div>
-	</footer>
+		</footer>
 </body>
 
 </html>
