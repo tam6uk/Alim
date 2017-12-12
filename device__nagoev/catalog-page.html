@@ -22,10 +22,12 @@
 
 			<div class="header-top">
 				<!-- FORM-SEARCH -->
-				<form action="#" method="post" class="search">
-					<input id="input" type="search" name="search" placeholder="Поиск по сайту">
-					<button class="btn btn-submit" type="submit">Найти</button>
-				</form>
+				<div class="search-wrap">
+						<form action="#" method="post" class="form-search">
+							<input class="search " id="input" type="search" name="search" placeholder="Поиск по сайту">
+							<button class="btn btn-submit" type="submit">Найти</button>
+						</form>
+					</div>
 				<!-- USER-BLOCK -->
 				<div class="user-block">
 					<a class="enter" href="#">Валентин Петухов</a>
@@ -139,16 +141,22 @@
 					<form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
 						<fieldset class="cost">
 							<legend class="form-legend">Стоимость</legend>
-							<div class="range-controls">
-								<div class="scale">
-									<div class="bar"></div>
+							<div class="range-filter">
+								<div class="range-controls">
+									<div class="scale">
+										<div class="bar"></div>
+									</div>
+									<div class="toggle toggle-min"></div>
+									<div class="toggle toggle-max"></div>
 								</div>
-								<div class="toggle toggle-min"></div>
-								<div class="toggle toggle-max"></div>
-							</div>
-							<div class="selected-price">
-								<span>от 0</span>
-								<span>до 5000</span>
+								<div class="price-controls">
+									<label class="min-price">от
+										<input name="min-price" type="text" value="0">
+									</label>
+									<label class="max-price">до
+										<input name="max-price" type="text" value="5000">
+									</label>
+								</div>
 							</div>
 						</fieldset>
 
