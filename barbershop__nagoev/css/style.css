@@ -69,7 +69,7 @@ HEADER SECTION
 .main-navigation a {
     position: relative;
     display: block;
-    padding: 23px 21px;
+    padding: 25px 20px;
     color: #ffffff;
     text-decoration: none;
 }
@@ -107,7 +107,7 @@ HEADER SECTION
 }
 .login {
     position: relative;
-    padding: 23px 20px;
+    padding: 25px 20px;
     padding-left: 54px;
     color: #ffffff;
     text-decoration: none;
@@ -268,7 +268,7 @@ CONTENT-INDEX
     padding: 12px 0;
     cursor: pointer;
     text-align: center;
-    font-family: 'PT Sans Narrow', sans-serif;
+    font-family: "PT Sans - Narrow", sans-serif;
     text-transform: uppercase;
     color: #ffffff;
     text-decoration: none;

@@ -23,16 +23,16 @@
 			<div class="header-top">
 				<!-- FORM-SEARCH -->
 				<div class="search-wrap">
-						<form action="#" method="post" class="form-search">
-							<input class="search " id="input" type="search" name="search" placeholder="Поиск по сайту">
-							<button class="btn btn-submit" type="submit">Найти</button>
-						</form>
-					</div>
+					<form action="#" method="post" class="form-search">
+						<input class="search " id="input" type="search" name="search" placeholder="Поиск по сайту">
+						<button class="btn-search" type="submit">Найти</button>
+					</form>
+				</div>
 				<!-- USER-BLOCK -->
-				<div class="user-block">
-					<a class="enter" href="#">Валентин Петухов</a>
-					<a class="exit" href="#">Выйти</a>
-					<a class="compare" href="#">Сравнить</a>
+				<div class="user-block header-user-block">
+					<a class="login user-name" href="#">Валентин Петухов</a>
+					<a class="exit user-exit" href="#">Выйти</a>
+					<a class="compare user-compare" href="#">Сравнить</a>
 					<a class="cart" href="#">Корзина</a>
 				</div>
 			</div>
@@ -69,14 +69,14 @@
 				</div>
 				<!-- MAIN-MENU -->
 				<nav class="menu">
-					<ul class="navigation">
-						<li class="navigation-item">
+					<ul class="header-nav">
+						<li class="nav-item">
 							<a href="#">Доставка</a>
 						</li>
-						<li class="navigation-item">
+						<li class="nav-item">
 							<a href="#">Гарантия</a>
 						</li>
-						<li class="navigation-item">
+						<li class="nav-item">
 							<a href="#">Контакты</a>
 						</li>
 					</ul>
@@ -119,9 +119,9 @@
 					<h2 class="catalog-sort-subtittle">Сортировка:</h2>
 
 					<div class="catalog-sort-type">
-						<a class="current">По цене</a>
-						<a href="#">По типу</a>
-						<a href="#">По популярности</a>
+						<a class="price current">По цене</a>
+						<a class="type" href="#">По типу</a>
+						<a class="raiting" href="#">По популярности</a>
 					</div>
 
 					<div class="catalog-sort-direction">
@@ -197,7 +197,7 @@
 							</div>
 
 						</fieldset>
-						<button class="device-btn" type="submit">Показать</button>
+						<button class="btn btn-device" type="submit">Показать</button>
 					</form>
 				</div>
 
@@ -210,7 +210,7 @@
 								<img class="item-cart-image" src="img/item-1.jpg" width="360" height="380" alt="Фото любительской селфи-палки">
 							</div>
 							<div class="item-card-action">
-								<a class="item-card-buy" href="#">В корзину</a>
+								<a class="btn btn-card-buy" href="#">В корзину</a>
 								<a class="item-card-compare" href="#">Добавить к сравнению</a>
 							</div>
 							<div class="item-card-description">
@@ -224,7 +224,7 @@
 								<img class="item-cart-image" src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
 							</div>
 							<div class="item-card-action">
-								<a class="item-card-buy" href="#">В корзину</a>
+								<a class="btn btn-card-buy" href="#">В корзину</a>
 								<a class="item-card-compare" href="#">Добавить к сравнению</a>
 							</div>
 							<div class="item-card-description">
@@ -238,7 +238,7 @@
 								<img class="item-cart-image" src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
 							</div>
 							<div class="item-card-action">
-								<a class="item-card-buy" href="#">В корзину</a>
+								<a class="btn btn-card-buy" href="#">В корзину</a>
 								<a class="item-card-compare" href="#">Добавить к сравнению</a>
 							</div>
 							<div class="item-card-description">
@@ -252,7 +252,7 @@
 								<img class="item-cart-image" src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
 							</div>
 							<div class="item-card-action">
-								<a class="item-card-buy" href="#">В корзину</a>
+								<a class="btn btn-card-buy" href="#">В корзину</a>
 								<a class="item-card-compare" href="#">Добавить к сравнению</a>
 							</div>
 							<div class="item-card-description">
@@ -262,19 +262,19 @@
 						</div>
 
 						<div class="pagination">
-							<a class="catalog-nav nav-prev" href="#">Назад</a>
+							<a class="nav-prev" href="#">Назад</a>
 							<ul class="catalog-nav">
 								<li>
-									<a class="active">1</a>
+									<a class="catalog-nav-item active">1</a>
 								</li>
 								<li>
-									<a href="#">2</a>
+									<a class="catalog-nav-item" href="#">2</a>
 								</li>
 								<li>
-									<a href="#">3</a>
+									<a class="catalog-nav-item" href="#">3</a>
 								</li>
 							</ul>
-							<a class="catalog-nav nav-next" href="#">Вперед</a>
+							<a class="nav-next" href="#">Вперед</a>
 						</div>
 					</div>
 				</div>
@@ -284,49 +284,48 @@
 
 	<!-- FOOTER -->
 	<!-- MAIN-FOOTER -->
-	<footer class="main-footer">
-			<div class="container footer-wrap">
-	
-				<div class="footer-company">
-					<div class="footer-logo">
-						<img src="img/logo.svg" alt="Логотип" width="164" height="36">
-					</div>
-					<p class="company-address">г. Москва, ул. Строителей, 15</p>
-				</div>
-	
-				<div class="footer-middle">
-					<nav class="menu">
-						<ul class="navigation">
-							<li class="navigation-item">
-								<a href="#">Доставка</a>
-							</li>
-							<li class="navigation-item">
-								<a href="#">Гарантия</a>
-							</li>
-							<li class="navigation-item">
-								<a href="#">Контакты</a>
-							</li>
-						</ul>
-					</nav>
-					<div class="footer-social">
-						<a href="#" class="social-btn social-btn-fb">Фейсбук</a>
-						<a href="#" class="social-btn social-btn-inst">Инстаграм</a>
-						<a href="#" class="social-btn social-btn-tw">Твиттер</a>
-					</div>
-				</div>
-				<div class="footer-contacts">
-					<div class="user-block">
-						<a class="login exit" href="#">Выйти</a>
-						<a class="compare" href="#">Сравнить</a>
-						<a class="cart" href="#">Корзина</a>
-					</div>
-					<p class="phone-number">
-						<a href="#">Тел.: +7 (495) 495-95-95</a>
-					</p>
-					<a class="footer-copyright" href="https://htmlacademy.ru">htmlacademy.ru</a>
+	<footer class="main-footer footer-inner">
+		<div class="container footer-wrap">
+			<div class="footer-company">
+				<a class="footer-logo" href="#">
+					<img src="img/flogo.png" alt="Логотип" width="164" height="36">
+				</a>
+				<p class="company-address">г. Москва, ул. Строителей, 15</p>
+			</div>
+
+			<div class="footer-middle">
+				<nav class="menu">
+					<ul class="footer-nav">
+						<li class="nav-item">
+							<a href="#">Доставка</a>
+						</li>
+						<li class="nav-item">
+							<a href="#">Гарантия</a>
+						</li>
+						<li class="nav-item">
+							<a href="#">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="footer-social">
+					<a href="#" class="social-btn social-btn-fb">Фейсбук</a>
+					<a href="#" class="social-btn social-btn-inst">Инстаграм</a>
+					<a href="#" class="social-btn social-btn-tw">Твиттер</a>
 				</div>
 			</div>
-		</footer>
+			<div class="footer-contacts">
+				<div class="user-block footer-user-block">
+					<a class="login" href="#">Войти</a>
+					<a class="compare" href="#">Сравнить</a>
+					<a class="cart" href="#">Корзина</a>
+				</div>
+				<p class="phone-number">
+					<a href="#">Тел.: +7 (495) 495-95-95</a>
+				</p>
+				<a class="footer-copyright" href="https://htmlacademy.ru">htmlacademy.ru</a>
+			</div>
+		</div>
+	</footer>
 </body>
 
 </html>

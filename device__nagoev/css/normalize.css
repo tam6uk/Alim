@@ -68,7 +68,8 @@ main { /* 1 */
  */
 
 figure {
-  margin: 1em 40px;
+  margin: 0;
+  padding: 0;
 }
 
 /**
@@ -309,7 +310,10 @@ button:-moz-focusring,
  */
 
 fieldset {
-  padding: 0.35em 0.75em 0.625em;
+  margin: 0;
+  padding: 0;
+  border: none;
+  /* padding: 0.35em 0.75em 0.625em; */
 }
 
 /**
@@ -445,6 +449,7 @@ template {
 [hidden] {
   display: none;
 }
+
 /**
  * Add for me.
  */
@@ -452,4 +457,13 @@ template {
  ul {
   padding: 0;
   margin: 0;
+ }
+
+ h1, h2, h3, h4, h5, h6, p {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
