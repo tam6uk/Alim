@@ -121,7 +121,6 @@ a {
 .footer-social .social-btn:hover,
 input[type="checkbox"]+label:hover::before,
 input[type="radio"]+label:hover::before,
-.catalog-sort-type a:hover,
 .btn-up:hover,
 .btn-down:hover {
     opacity: 0.6;
@@ -203,6 +202,7 @@ input[type="radio"]+label:hover::before,
     color: #000000;
     outline: none;
     border-bottom: 2px solid black;
+    opacity: 1;
 }
 
 .search:focus+.btn-search,
@@ -579,7 +579,7 @@ input[type="radio"]+label:hover::before,
     width: 100px;
     height: 9px;
     background: #ffffff;
-    top: 37px;
+    top: 34px;
 }
 
 .slider-description {
@@ -973,27 +973,6 @@ input[type="radio"]+label:hover::before,
     position: relative;
     padding-top: 36px;
 }
-
-.footer-inner::before {
-    position: absolute;
-    top: 0px;
-    right: 221px;
-    content: "";
-    width: 982px;
-    height: 33px;
-    background-color: #fff;
-}
-
-.footer-inner::after {
-    position: absolute;
-    top: 0px;
-    left: 233px;
-    content: "";
-    width: 467px;
-    height: 33px;
-    background-color: #ebebeb;
-}
-
 .main-footer {
     background: #464646;
     color: #ffffff;
@@ -1454,7 +1433,10 @@ input[type="checkbox"]:checked+label::before {
     background: #ababab;
     box-shadow: 0 2px 1px 0 #cfcfcf;
 }
-
+.range-controls .toggle:active {
+    width: 23px;
+    height: 23px;
+}
 .range-controls .toggle-min {
     left: -9px;
 }
@@ -1509,7 +1491,6 @@ input[type="checkbox"]:checked+label::before {
     width: 300px;
     margin-right: auto;
 }
-
 .catalog-sort-type .price {
     margin-left: 7px;
 }
@@ -1517,11 +1498,14 @@ input[type="checkbox"]:checked+label::before {
 .catalog-sort-type .type {
     margin-left: -4px;
 }
-
-.catalog-sort-type .current {
-    opacity: 1;
+.catalog-sort-type a:hover {
+    opacity: 0.6;
 }
-
+.catalog-sort-type a:active,
+.catalog-sort-type a.current {
+    opacity: 1;
+    color: #000000;
+}
 .catalog-sort-direction {
     position: relative;
     font-size: 0;
@@ -1540,7 +1524,14 @@ input[type="checkbox"]:checked+label::before {
     border-right: 6px solid rgba(0, 0, 0, 0);
     opacity: 0.2;
 }
-
+.btn-up:active {
+    border-bottom: 14px solid #000000;
+    opacity: 1;
+}
+.btn-down:active {
+    border-top: 14px solid #000000;
+    opacity: 1;
+}
 .btn-down {
     cursor: pointer;
     position: absolute;
