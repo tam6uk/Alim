@@ -128,5 +128,32 @@
             </div>
         </div>
     </footer>
+
+    <!-- MODAL -->
+    <div class="modal">
+        <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+        <h2 class="modal-title">Личный кабинет</h2>
+
+        <form class="login-form" action="#" method="post">
+            <p class="login-form-text">Введите пожалуйста свой логин и пароль</p>
+            <div class="login-form-inputs">
+                <input class="icon-user" type="text" name="login" placeholder="Логин">
+                <input class="icon-password" type="password" name="password" placeholder="Пароль">
+                <div class="remember">
+                    <div class="checkbox-wrap">
+                        <input class="check" type="checkbox" id="remember" name="remember">
+                        <label class="login-checkbox" for="remember">Запомните меня</label>
+                    </div>
+                    <a class="restore" href="#">Я забыл пароль!</a>
+                </div>
+                <button class="btn btn-enter" type="submit">Войти</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="modal-overlay"></div>
+    <!-- JS -->
+    <script src="js/script.js"></script>
 </body>
+
 </html>

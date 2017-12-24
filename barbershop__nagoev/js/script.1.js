@@ -1,10 +1,12 @@
 var link = document.querySelector(".login");
-var popup = document.querySelector(".modal");
-var close = popup.querySelector(".modal-content-close");
 
+var popup = document.querySelector(".modal");
 var form = popup.querySelector("form");
 var login = popup.querySelector("[name=login]");
 var password = popup.querySelector("[name=password]");
+
+var close = document.querySelector(".modal-content-close");
+
 
 
 var storage = localStorage.getItem("login");
@@ -27,7 +29,6 @@ close.addEventListener("click", function(event){
     popup.classList.remove("modal-show");
     popup.classList.remove("modal-error");
 });
-
 form.addEventListener("submit", function(event) {
     if(!login.value || !password.value) { //Если значение пустое то вывести
         event.preventDefault();

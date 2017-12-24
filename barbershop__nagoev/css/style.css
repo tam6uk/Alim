@@ -940,10 +940,7 @@ table td:last-child {
             box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
     outline: 1px solid black;
 }
-/* JS */
-.modal-show {
-    display: block;
-}
+
 .modal-content-close {
     position: absolute;
     top: 7px;
@@ -973,6 +970,10 @@ table td:last-child {
         -ms-transform: rotate(-45deg);
             transform: rotate(-45deg);
 }
+.modal-content-close:hover::before,
+.modal-content-close:hover::after {
+    background-color: #be6c19; 
+}
 .modal-title {
     font-size: 30px;
     margin: 0;
@@ -985,7 +986,7 @@ table td:last-child {
 }
 .login-form input {
     width: 100%;
-    background: transparent;
+    background: #ffffff;
     border: 2px solid #000101;
     padding: 11px 12px 12px 14px;
     font-family: "PT Sans Narrow", "Arial", sans-serif;
@@ -1022,6 +1023,7 @@ table td:last-child {
     margin-bottom: 15px;
 }
 .login-checkbox {
+    cursor: pointer;
     position: absolute;
     left: 82px;
     padding-left: 30px;
@@ -1075,3 +1077,23 @@ input[type="checkbox"]:checked + .login-checkbox::before  {
     background: rgba(0, 0, 0, 0.5);
 }
 
+/* Animation */
+@keyframes bounce {
+    0% {transform: translateY(-2000px);}
+    70% {transform: translateY(30px);}
+    90% {transform: translateY(-10px);}
+    100% {transform: translateY(0);}
+}
+@keyframes shake {
+    0%, 100% {transform: translateX(0);}
+    10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);}
+    20%, 40%, 60%, 80% {transform: translateX(10px);}
+}
+/* JS */
+.modal-show {
+    display: block;
+    animation: bounce 0.6s;
+}
+.modal-error {
+    animation: shake 0.6s;
+}

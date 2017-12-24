@@ -1,37 +1,6 @@
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 button,hr,input{overflow:visible}audio,canvas,progress,video{display:inline-block}[type=checkbox],[type=radio],legend{box-sizing:border-box;padding:0}h1,h2,h3,h4,h5,h6,p,progress,sub,sup{vertical-align:baseline}html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section{display:block}figure{margin:0;padding:0}hr{box-sizing:content-box;height:0}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:bolder}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative}sub{bottom:-.25em}sup{top:-.5em}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:ButtonText dotted 1px}fieldset{margin:0;padding:0;border:none}legend{color:inherit;display:table;max-width:100%;white-space:normal}textarea{overflow:auto}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}[hidden],template{display:none}ul{padding:0;margin:0}h1,h2,h3,h4,h5,h6,p{margin:0;padding:0;border:0;font:inherit}
 /* style.css */
-/* FONTS */
-@font-face {
-    font-family: "Open Sans";
-    src: local("Open Sans Light"), local("OpenSans-Light"), url("../fonts/opensanslight.woff") format('woff'),
-    url("../fonts/opensanslight.woff2") format('woff2');
-    font-weight: 300;
-    font-style: normal;
-}
-@font-face {
-    font-family: "Open Sans";
-    src: local("Open Sans"), local("OpenSans"), url("../fonts/opensans.woff") format('woff'),
-    url("../fonts/opensans.woff2") format('woff2');
-    font-weight: 400;
-    font-style: normal;
-}
-@font-face {
-    font-family: "Gilroy";
-    src: local("Gilroy Light"), local("Gilroy-Light"), url("../fonts/opensanslight.woff2") format('woff'),
-    url("../fonts/gilroylight.woff2") format('woff2');
-    font-weight: 300;
-    font-style: normal;
-} 
-@font-face {
-    font-family: "Gilroy";
-    src: local("Gilroy ExtraBold"), local("Gilroy-ExtraBold"), url("../fonts/gilroyextrabold.woff") format('woff'),
-    url("../fonts/gilroyextrabold.woff2") format('woff2');
-    font-weight: 800;
-    font-style: normal;
-}
-/*  */
-
 html,
 body {
     margin: 0;
@@ -501,7 +470,7 @@ input[type="radio"]+label:hover::before,
     right: 3px;
     bottom: 3px;
     left: 3px;
-    background: #413540;
+    background: #41354800;
     border: 1px solid black;
     border-radius: 4px;
 }
@@ -914,6 +883,7 @@ input[type="radio"]+label:hover::before,
     height: 228px;
     background-image: url(../img/map.jpg);
     background-repeat: no-repeat;
+    cursor: pointer;    
 }
 .about-us-map iframe {
     border: none;
@@ -1630,7 +1600,7 @@ input[type="checkbox"]:checked+label::before {
 .modal-content-map {
     display: none;
     position: absolute;
-    top: 1060px;
+    top: 1664px;
     left: 50%;
     margin-left: -500px;
     width: 960px;
@@ -1641,6 +1611,7 @@ input[type="checkbox"]:checked+label::before {
     z-index: 100;
 }
 .modal-content-close {
+    cursor: pointer;
     font-size: 0;
     position: absolute;
     content: "";
@@ -1653,6 +1624,7 @@ input[type="checkbox"]:checked+label::before {
     right: 22px;
     background-color: #f7e296;
     outline: none;
+    transition: background-color 0.3s;
 
 }
 .modal-content-close::before,
@@ -1672,6 +1644,10 @@ input[type="checkbox"]:checked+label::before {
     -webkit-transform: rotate(-45deg);
         -ms-transform: rotate(-45deg);
             transform: rotate(-45deg);
+}
+.modal-content-close:hover {
+    background-color: #45443f;
+    opacity: 0.3;
 }
 .login-form-inputs {
     display: -webkit-box;
@@ -1745,4 +1721,30 @@ input[type="checkbox"]:checked+label::before {
     background: url(../img/map-big-jpg.png) no-repeat;
     background-position: -21px -21px;
     top: 1840px;
+}
+
+/* JS */
+.modal-show {
+    display: block;
+    animation: up 0.6s;
+}
+.modal-error {
+    animation: shake 0.6s;
+}
+/* Animation */
+@keyframes up {
+    0% {
+        transform: translateY(200px)
+    }
+    70% {
+        transform: translateY(-100px)
+    }
+    100% {
+        transform: translateY(0px)
+    }
+}
+@keyframes shake {
+    0%, 100% {transform: translateX(0);}
+    10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);}
+    20%, 40%, 60%, 80% {transform: translateX(10px);}
 }
