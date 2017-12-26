@@ -1,148 +1,327 @@
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
-button,hr,input{overflow:visible}audio,canvas,progress,video{display:inline-block}[type=checkbox],[type=radio],legend{box-sizing:border-box;padding:0}h1,h2,h3,h4,h5,h6,p,progress,sub,sup{vertical-align:baseline}html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section{display:block}figure{margin:0;padding:0}hr{box-sizing:content-box;height:0}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:bolder}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative}sub{bottom:-.25em}sup{top:-.5em}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:ButtonText dotted 1px}fieldset{margin:0;padding:0;border:none}legend{color:inherit;display:table;max-width:100%;white-space:normal}textarea{overflow:auto}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}[hidden],template{display:none}ul{padding:0;margin:0}h1,h2,h3,h4,h5,h6,p{margin:0;padding:0;border:0;font:inherit}
-/* style.css */
-html,
+
+button,
+hr,
+input {
+    overflow: visible
+}
+audio,
+canvas,
+progress,
+video {
+    display: inline-block
+}
+[type=checkbox],
+[type=radio],
+legend {
+    box-sizing: border-box;
+    padding: 0
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+progress,
+sub,
+sup {
+    vertical-align: baseline
+}
+html {
+    line-height: 1.15;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
+}
 body {
+    margin: 0
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section {
+    display: block
+}
+figure {
+    margin: 0;
+    padding: 0
+}
+hr {
+    box-sizing: content-box;
+    height: 0
+}
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, monospace;
+    font-size: 1em
+}
+a {
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects
+}
+abbr[title] {
+    border-bottom: none;
+    text-decoration: underline;
+    text-decoration: underline dotted
+}
+b,
+strong {
+    font-weight: bolder
+}
+dfn {
+    font-style: italic
+}
+mark {
+    background-color: #ff0;
+    color: #000
+}
+small {
+    font-size: 80%
+}
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative
+}
+sub {
+    bottom: -.25em
+}
+sup {
+    top: -.5em
+}
+audio:not([controls]) {
+    display: none;
+    height: 0
+}
+img {
+    border-style: none
+}
+svg:not(:root) {
+    overflow: hidden
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: sans-serif;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0
+}
+button,
+select {
+    text-transform: none
+}
+[type=reset],
+[type=submit],
+button,
+html [type=button] {
+    -webkit-appearance: button
+}
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner,
+button::-moz-focus-inner {
+    border-style: none;
+    padding: 0
+}
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring,
+button:-moz-focusring {
+    outline: ButtonText dotted 1px
+}
+fieldset {
     margin: 0;
     padding: 0;
+    border: none
+}
+legend {
+    color: inherit;
+    display: table;
+    max-width: 100%;
+    white-space: normal
+}
+textarea {
+    overflow: auto
+}
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+    height: auto
+}
+[type=search] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px
+}
+[type=search]::-webkit-search-cancel-button,
+[type=search]::-webkit-search-decoration {
+    -webkit-appearance: none
+}
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit
+}
+summary {
+    display: list-item
+}
+[hidden],
+template {
+    display: none
+}
+ul {
+    padding: 0;
+    margin: 0
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit
+}
+body,
+html {
+    margin: 0;
+    padding: 0
 }
 body {
     min-width: 960px;
     font-weight: 700;
     font-size: 14px;
     line-height: 24px;
-    font-family: "PT Sans Narrow", "Arial", sans-serif;
-    color: #ffffff;
+    font-family: "PT Sans Narrow", Arial, sans-serif;
+    color: #fff;
     text-transform: uppercase;
-    background: #000000 url("../img/bckgr-index.jpg") no-repeat center top;
-    letter-spacing: 0.01em;
+    background: #000 url(../img/bckgr-index.jpg) no-repeat center top;
+    letter-spacing: .01em
 }
 *,
-*::before,
-*::after {
+::after,
+::before {
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box
 }
 .container {
     width: 960px;
     padding: 0 10px;
-    margin: 0 auto;
+    margin: 0 auto
 }
 .flex-container {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
+    display: flex
 }
-/* Базовые настройки */
 .main-body {
-    background: #000 url("../img/bckgr-index.jpg") no-repeat center top;
+    background: #000 url(../img/bckgr-index.jpg) no-repeat center top
 }
 .inner-page {
-    color: #000000;
-    background: #f8f3f0 url("../img/bckgr.png") no-repeat;
+    color: #000;
+    background: #f8f3f0 url(../img/bckgr.png) no-repeat
 }
 .main-header {
-    background: #000000;
-    margin-bottom: 60px;
+    background: #000;
+    margin-bottom: 60px
 }
 .main {
-    color: #000;
+    color: #000
 }
 .inner-page .main-header {
-    margin-bottom: 50px;
+    margin-bottom: 50px
 }
 .main-footer {
-    background: #232323 url("../img/footer-bckgr.png");
-    color: #ffffff;
+    background: #232323 url(../img/footer-bckgr.png);
+    color: #fff;
     margin-top: 68px;
     padding-top: 55px;
-    padding-bottom: 43px;
+    padding-bottom: 43px
 }
 img {
-    vertical-align: bottom;
+    vertical-align: bottom
 }
-/*====================================
-#HEADER SECTION:
-#LOGO
-#NAVIGATION
-#USER-BLOCK
-====================================*/
-/*========================
-#LOGO
-==========================*/
 .main-logo {
     display: block;
     width: 111px;
     height: 20px;
     padding: 24px 19px;
-    margin-right: 35px;
+    margin-right: 35px
 }
 .main-logo img {
     width: 111px;
-    height: 24px;
+    height: 24px
 }
-/*========================
-#NAVIGATION
-==========================*/
 .main-navigation {
     max-width: 780px;
-    margin-right: auto;
+    margin-right: auto
 }
 .main-navigation ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    font-size: 0;
+    font-size: 0
 }
-.main-navigation li,
-.login {
+.login,
+.main-navigation li {
     display: inline-block;
     font-size: 16px;
-    line-height: 20px;
+    line-height: 20px
 }
 .main-navigation a {
     position: relative;
     display: block;
     padding: 26px 19px;
-    color: #ffffff;
+    color: #fff;
     font-weight: 700;
-    text-decoration: none;
+    text-decoration: none
 }
-.main-navigation a::after,
-.main-navigation .active::after {
+.main-navigation .active::after,
+.main-navigation a::after {
     display: none;
     content: "";
     position: absolute;
     right: 20px;
-    bottom: 0px;
+    bottom: 0;
     left: 20px;
     height: 5px;
-    background-color: #ffffff;
+    background-color: #fff
 }
-.main-navigation a:hover,
-.login:hover {
+.login:hover,
+.main-navigation a:hover {
     background-color: #242424;
-    -webkit-transition: all 0.4s;
-    -o-transition: all 0.4s;
-    transition: all 0.4s;
+    -webkit-transition: all .4s;
+    -o-transition: all .4s;
+    transition: all .4s
 }
-.main-navigation a:active::after,
-.main-navigation .active::after {
-    display: block;
+.main-navigation .active::after,
+.main-navigation a:active::after {
+    display: block
 }
-/*========================
-#USER-BLOCK
-==========================*/
 .user-block {
-    max-width: 140px;
+    max-width: 140px
 }
 .login {
     position: relative;
     padding: 25px 21px;
     padding-left: 54px;
     font-weight: 700;
-    color: #ffffff;
-    text-decoration: none;
+    color: #fff;
+    text-decoration: none
 }
 .login::before {
     position: absolute;
@@ -153,44 +332,33 @@ img {
     left: 23px;
     top: 28px;
     background: url(../img/user-block.png) 21px 22px;
-    opacity: 0.3;
+    opacity: .3
 }
 .login:hover::before {
-    opacity: 1;
+    opacity: 1
 }
-/*========================
-#MAIN SECTION 
-#INDEX-LOGO
-#FEATURE
-#CONTENT-INDEX
-==========================*/
-
-/*========================
-#MAIN SECTION 
-==========================*/
 .index-logo {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin-bottom: 69px;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-bottom: 69px
 }
-/* #FEATURES */
 .features {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     margin-bottom: 78px;
-    color: #ffffff;
+    color: #fff
 }
 .features-item {
     width: 300px;
-    text-align: center;
+    text-align: center
 }
 .features-name {
     position: relative;
@@ -198,7 +366,7 @@ img {
     display: block;
     font-size: 30px;
     line-height: 42px;
-    margin-bottom: 30px;
+    margin-bottom: 30px
 }
 .features-name::after {
     display: block;
@@ -206,127 +374,121 @@ img {
     top: 53px;
     left: 140px;
     -webkit-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-            transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
     content: "";
     width: 20px;
     height: 20px;
-    background: #ffffff;
+    background: #fff
 }
 .features-item p {
     margin: 10px;
-    margin-bottom: 0px;
+    margin-bottom: 0
 }
-/*========================
-#CONTENT-INDEX
-==========================*/
 .index-content {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     margin-bottom: 36px;
     padding: 50px 80px;
-    background: url("../img/gradient-index.png") no-repeat center, #f8f5f2 url("../img/catalog-bckgr.png");
-    color: #000;
+    background: url(../img/gradient-index.png) no-repeat center, #f8f5f2 url(../img/catalog-bckgr.png);
+    color: #000
 }
 .index-content:last-child {
-    margin-bottom: 0;
+    margin-bottom: 0
 }
 .index-content-item:first-child,
 .index-content-item:nth-child(3) {
-    width: 380px;
+    width: 380px
 }
-.index-content-item:nth-child(2),
-.index-content-item:last-child {
-    width: 300px;
+.index-content-item:last-child,
+.index-content-item:nth-child(2) {
+    width: 300px
 }
 .index-content-title {
     font-size: 31px;
     line-height: 42px;
     margin-bottom: 20px;
-    margin-top: -6px;
+    margin-top: -6px
 }
 .news-preview a {
     text-decoration: none;
-    color: #000000;
+    color: #000
 }
 .news-preview li {
     list-style: none;
-    margin-bottom: 21px;
+    margin-bottom: 21px
 }
 .news-preview time {
-    text-transform: none;
+    text-transform: none
 }
 .gallery-content {
     border: 7px solid #fff;
     height: 179px;
     margin-bottom: 40px;
-    overflow: hidden;
+    overflow: hidden
 }
-/* .gallery-content img {
-    vertical-align: text-top;
-} */
 .gallery-btn {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between
 }
 .timework {
     margin-top: 21px;
-    margin-bottom: 21px;
+    margin-bottom: 21px
 }
 .btn-find-us {
-    margin-right: 20px;
+    margin-right: 20px
 }
 .contact-form input {
     width: 140px;
     padding: 7px 15px;
     font-size: 14px;
     line-height: 24px;
-    color: #000000;
+    color: #000;
     background-color: #f9f6f3;
-    border: 2px solid #000000;
+    border: 2px solid #000;
     font-family: "PT Sans Narrow";
-    font-weight: 700;
+    font-weight: 700
 }
 .contact-form input:focus {
     border-color: #663d15;
-    outline: none;
-    -webkit-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    transition: all 0.5s;
+    outline: 0;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s
 }
 .flex-row {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between
 }
 .contact-form .flex-row:first-child {
     margin-top: 11px;
-    margin-bottom: 10px;
+    margin-bottom: 10px
 }
 .contact-form .flex-row:nth-child(2) {
-    margin-bottom: 20px;
+    margin-bottom: 20px
 }
 .input-wrap label {
     display: block;
     padding-left: 18px;
-    margin-bottom: 7px;
+    margin-bottom: 7px
 }
 .btn {
     display: inline-block;
     width: 140px;
     height: 44px;
-    padding: 10px 0px;
+    padding: 10px 0;
     cursor: pointer;
     text-align: center;
     font-family: 'PT Sans Narrow', sans-serif;
@@ -334,30 +496,30 @@ img {
     text-transform: uppercase;
     vertical-align: middle;
     font-weight: 700;
-    letter-spacing: 0.5px;
-    color: #ffffff;
+    letter-spacing: .5px;
+    color: #fff;
     text-decoration: none;
-    background-color: #000000;
-    border: none;
+    background-color: #000;
+    border: none
 }
-.btn:hover,
 .btn:active,
+.btn:hover,
 .pagination-item a:hover {
     background-color: #663d15;
-    -webkit-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    transition: all 0.5s;
-} 
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s
+}
 .btn-news {
-    margin-top: 9px;
+    margin-top: 9px
 }
 .btn-submit {
     width: 100%;
-    letter-spacing: 0.5px;
+    letter-spacing: .5px
 }
 .price-btn {
     width: 78px;
-    height: 45px;
+    height: 45px
 }
 .index-content-inner {
     width: 300px;
@@ -365,109 +527,85 @@ img {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between
 }
-/*========================
-#FOOTER SECTION
-#FOOTER-CONTACTS
-#FOOTER-SOCIAL
-#FOOTER-COPYRIGHT
-==========================*/
 .footer-contacts {
     width: 320px;
-    margin-right: 80px;
+    margin-right: 80px
 }
 .footer-contacts a {
-    color: #ffffff;
-    font-weight: 700;
+    color: #fff;
+    font-weight: 700
 }
-/*========================
-#FOOTER-SOCIAL
-==========================*/
 .footer-social {
     font-size: 0;
     text-align: center;
-    margin-right: auto;
+    margin-right: auto
 }
 .footer-social p {
     padding-bottom: 14px;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 24px
 }
 .social-btn {
     display: inline-block;
     width: 43px;
     height: 43px;
     margin-right: 5px;
-    background: #000 url("../img/social-icons1.png") no-repeat center;
+    background: #000 url(../img/social-icons1.png) no-repeat center
 }
 .social-btn-vk {
-    background-position: -57px 13px;
+    background-position: -57px 13px
 }
 .social-btn:hover {
     -webkit-filter: invert(100%);
-            filter: invert(100%);
+    filter: invert(100%)
 }
 .social-btn-fb {
-    background-position: 16px 11px;
+    background-position: 16px 11px
 }
 .social-btn-inst {
-    background-position: -15px 11px;
+    background-position: -15px 11px
 }
 .social-btn:last-child {
-    margin-right: 0;
+    margin-right: 0
 }
-/*========================
-#FOOTER-COPYRIGHT
-==========================*/
 .footer-copyright {
     width: 140px;
-    text-align: center;
+    text-align: center
 }
 .footer-copyright a:hover {
-    background: #ffffff;
-    color: #000000;
+    background: #fff;
+    color: #000
 }
 .btn-copyright {
     margin-top: 15px;
-    letter-spacing: 0.5px;
+    letter-spacing: .5px
 }
-
-/*========================
-#PRICE PAGE
-#PRICE-TITLE
-#BREADCRUMBS
-#CLASSIC
-#PRICE ITEMS 
-#ABOUT US
-==========================*/
 .price-title {
     font-size: 30px;
     line-height: 42px;
     margin: 0;
     margin-bottom: 15px;
-    padding: 0;
+    padding: 0
 }
-/*========================
-#BREADCRUMBS
-==========================*/
 .breadcrumbs {
-    margin-bottom: 50px;
+    margin-bottom: 50px
 }
 .breadcrumbs-item {
     position: relative;
     list-style: none;
     display: inline-block;
-    margin-right: 37px;
+    margin-right: 37px
 }
 .breadcrumbs-item a {
     text-decoration: none;
-    color: #000;
+    color: #000
 }
 .breadcrumbs-item:last-child a {
     color: #aba9a7;
-    padding-left: 5px;
+    padding-left: 5px
 }
 .breadcrumbs-item::after {
     position: absolute;
@@ -478,16 +616,13 @@ img {
     bottom: 8px;
     left: -24px;
     -webkit-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-            transform: rotate(45deg);
-    background-color: #000;
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    background-color: #000
 }
 .breadcrumbs-item:first-child::after {
-    display: none;
+    display: none
 }
-/*========================
-#CLASSIC
-==========================*/
 .classic {
     display: block;
     font-size: 48px;
@@ -496,12 +631,12 @@ img {
     position: relative;
     top: -3px;
     left: 0;
-    margin: 0px;
-    padding: 0px;
-    margin-bottom: 37px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 37px
 }
-.classic::before,
-.classic::after {
+.classic::after,
+.classic::before {
     position: absolute;
     display: inline-block;
     content: " ";
@@ -509,38 +644,35 @@ img {
     top: 24px;
     right: -2px;
     width: 160px;
-    background: #000;
+    background: #000
 }
 .classic::after {
-    left: 1px;
+    left: 1px
 }
-/*========================
-#PRICE ITEMS
-==========================*/
 .price-items {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    margin-bottom: 47px;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 47px
 }
 .composition {
-    width: 380px;
+    width: 380px
 }
-.price-items h3,
-.about-us-title {
+.about-us-title,
+.price-items h3 {
     font-size: 24px;
     line-height: 30px;
-    margin: 22px 0px 26px;
-    padding: 0;
+    margin: 22px 0 26px;
+    padding: 0
 }
 .composition-list li {
     list-style: none;
     padding-left: 20px;
     padding-bottom: 13px;
-    position: relative;
+    position: relative
 }
 .composition-list li::before {
     position: absolute;
@@ -551,95 +683,80 @@ img {
     bottom: 20px;
     left: 2px;
     -webkit-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-            transform: rotate(45deg);
-    background-color: #000;
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    background-color: #000
 }
 .price-table {
-    width: 460px;
+    width: 460px
 }
 .price-table table {
     width: 100%;
     border: 2px solid #000101;
     border-collapse: collapse;
     line-height: 30px;
-    margin-top: 33px;
+    margin-top: 33px
 }
 table td {
     width: 50%;
     border: 2px solid #000101;
-    padding: 4px 15px 5px 17px;
+    padding: 4px 15px 5px 17px
 }
 table td:last-child {
-    text-align: center;
+    text-align: center
 }
-/*========================
-#ABOUT US
-==========================*/
 .about-us-desc {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-bottom: 78px;
+    margin-bottom: 78px
 }
 .desc-item {
     width: 460px;
     padding-right: 66px;
-    margin-right: auto;
+    margin-right: auto
 }
-/*========================
-#SHOP(CATALOG) PAGE
-#CATALOG-TITLE
-#CATALOG-FORM
-#CATALOG-CARDS
-==========================*/
 .catalog-title {
     margin: 0;
     margin-bottom: 15px;
     padding: 0;
     font-size: 30px;
-    line-height: 42px;
+    line-height: 42px
 }
-/*========================
-#CATALOG-CONTENT
-==========================*/
 .catalog-wrap {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between
 }
-/*========================
-#CATALOG-FORM
-==========================*/
 .catalog-form {
     width: 220px;
-    margin-right: auto;
+    margin-right: auto
 }
 .catalog-form-item {
-    margin-bottom: 40px;
+    margin-bottom: 40px
 }
 .form-title {
     font-size: 24px;
     line-height: 1;
     margin-bottom: 27px;
-    text-transform: uppercase;
+    text-transform: uppercase
 }
 .catalog-input-inner {
     max-width: 170px;
-    margin-bottom: 13px;
+    margin-bottom: 13px
 }
 .catalog-input-inner:hover {
     color: #663d15;
-    -webkit-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    transition: all 0.5s;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s
 }
-.catalog-input-inner input[type="checkbox"],
-.catalog-input-inner input[type="radio"] {
-    display: none;
+.catalog-input-inner input[type=checkbox],
+.catalog-input-inner input[type=radio] {
+    display: none
 }
 .catalog-input-inner label {
     position: relative;
@@ -647,27 +764,27 @@ table td:last-child {
     line-height: 18px;
     display: inline-block;
     cursor: pointer;
-    vertical-align: middle;
+    vertical-align: middle
 }
-.catalog-input-inner input[type="checkbox"] + label::before,
-.catalog-input-inner input[type="checkbox"] + label::after {
+.catalog-input-inner input[type=checkbox]+label::after,
+.catalog-input-inner input[type=checkbox]+label::before {
     position: absolute;
     content: "";
     top: -2px;
     left: 0;
     width: 20px;
     height: 20px;
-    border: 2px solid #000101;
+    border: 2px solid #000101
 }
-.catalog-input-inner input[type="checkbox"] + label::after {
-    background: url("../img/cross.png") no-repeat 2px 2px;
-    display: none;
+.catalog-input-inner input[type=checkbox]+label::after {
+    background: url(../img/cross.png) no-repeat 2px 2px;
+    display: none
 }
-.catalog-input-inner input[type="checkbox"]:checked + label::after {
-    display: inline-block;
+.catalog-input-inner input[type=checkbox]:checked+label::after {
+    display: inline-block
 }
-.catalog-input-inner input[type="radio"] + label::before,
-.catalog-input-inner input[type="radio"] + label::after {
+.catalog-input-inner input[type=radio]+label::after,
+.catalog-input-inner input[type=radio]+label::before {
     position: absolute;
     content: "";
     top: 3px;
@@ -675,43 +792,40 @@ table td:last-child {
     width: 20px;
     height: 20px;
     border: 2px solid #000101;
-    border-radius: 50%;
+    border-radius: 50%
 }
-.catalog-input-inner input[type="radio"] + label::after {
+.catalog-input-inner input[type=radio]+label::after {
     display: none;
     top: 9px;
     left: 6px;
     width: 8px;
     height: 8px;
-    background-color: #000101;
+    background-color: #000101
 }
-.catalog-input-inner input[type="radio"]:checked + label::after {
-    display: block;
+.catalog-input-inner input[type=radio]:checked+label::after {
+    display: block
 }
 .catalog-input-inner.disabled {
-    color: rgb(84, 84, 84);
-    opacity: 0.3;
+    color: #545454;
+    opacity: .3
 }
 .btn-show {
     width: 112px;
-    height: 43px;
+    height: 43px
 }
-/*========================
-#CATALOG-CARDS
-==========================*/
 .catalog-cards {
-    width: 700px;
+    width: 700px
 }
 .catalog-cards-list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    margin-bottom: 23px;
+    flex-wrap: wrap;
+    margin-bottom: 23px
 }
 .card-item {
     background: #fff;
@@ -719,43 +833,47 @@ table td:last-child {
     width: 220px;
     margin-bottom: 20px;
     text-align: left;
-    -webkit-box-shadow: 0 0 15px rgba(0, 1, 1, 0.2);
-            box-shadow: 0 0 15px rgba(0, 1, 1, 0.2);
+    -webkit-box-shadow: 0 0 15px rgba(0, 1, 1, .2);
+    box-shadow: 0 0 15px rgba(0, 1, 1, .2)
 }
 .card-item a {
-    display: block;
+    display: block
 }
 .card-item:hover {
-    -webkit-box-shadow: 5px 5px 25px 0 rgba(0, 1, 1, 0.3);
-            box-shadow: 5px 5px 25px 0 rgba(0, 1, 1, 0.3);
-    -webkit-transition: all 0.4s;
-    -o-transition: all 0.4s;
-    transition: all 0.4s;
+    -webkit-box-shadow: 5px 5px 25px 0 rgba(0, 1, 1, .3);
+    box-shadow: 5px 5px 25px 0 rgba(0, 1, 1, .3);
+    -webkit-transition: all .4s;
+    -o-transition: all .4s;
+    transition: all .4s
 }
 .img-wrapper {
     overflow: hidden;
-    margin-bottom: 13px;
+    margin-bottom: 13px
+}
+.img-wrapper img {
+    width: 100%;
+    height: auto;
 }
 .card-item-description {
     font-size: 14px;
     line-height: 18px;
-    margin: 0px 0px 13px;
-    padding: 0px 16px;
-    text-transform: none;
+    margin: 0 0 13px;
+    padding: 0 16px;
+    text-transform: none
 }
 .card-item-title {
     text-decoration: none;
-    color: #000000;
+    color: #000
 }
 .card-item-description .name {
-    text-transform: uppercase;
+    text-transform: uppercase
 }
 .price {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding: 0px 16px;
-    margin-bottom: 16px;
+    padding: 0 16px;
+    margin-bottom: 16px
 }
 .price-text {
     background-color: #e5e5e5;
@@ -765,16 +883,13 @@ table td:last-child {
     min-width: 109px;
     padding: 0 26px;
     text-align: center;
-    vertical-align: top;
+    vertical-align: top
 }
-/*========================
-#PAGINATION
-==========================*/
 .pagination {
-    font-size: 0px;
+    font-size: 0
 }
 .pagination li {
-    display: inline-block;
+    display: inline-block
 }
 .pagination-item a {
     display: inline-block;
@@ -785,129 +900,120 @@ table td:last-child {
     font-size: 14px;
     width: 43px;
     height: 43px;
-    background: #000000;
-    color: #ffffff;
-    text-decoration: none;
+    background: #000;
+    color: #fff;
+    text-decoration: none
 }
 .pagination-item .active,
 .pagination-item .active:hover {
     background: #fff;
-    color: #000;
+    color: #000
 }
 .inner-page .main-footer {
     margin-top: 49px;
     -webkit-box-shadow: inset 0 30px 40px -15px #000;
-            box-shadow: inset 0 30px 40px -15px #000;
-    
+    box-shadow: inset 0 30px 40px -15px #000
 }
 .inner-page .main-footer .btn-copyright {
     margin-top: 15px;
-    letter-spacing: 0.5px;
+    letter-spacing: .5px;
     width: 140px;
     padding-left: 3px;
-    height: 43px;
+    height: 43px
 }
-/*========================
-#ITEM PAGE
-#PRODUCT SECTION
-#PRODUCT GALLERY
-#PRODUCT ARTICLE
-==========================*/
 .product-title {
     font-size: 30px;
     line-height: 42px;
     margin: 0;
     margin-bottom: 15px;
-    padding: 0;
+    padding: 0
 }
-/*========================
-#PRODUCT SECTION
-==========================*/
 .product-section {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between
 }
 .product-gallery {
-    width: 460px;
+    width: 460px
 }
-/* .product-gallery img {
-    vertical-align: text-top;
-} */
 .gallery-item-big {
+    overflow: hidden;
     margin-bottom: 20px;
-    -webkit-box-shadow: 0 0 15px rgba(0, 1, 1, 0.2);
-            box-shadow: 0 0 15px rgba(0, 1, 1, 0.2);
+    -webkit-box-shadow: 0 0 15px rgba(0, 1, 1, .2);
+    box-shadow: 0 0 15px rgba(0, 1, 1, .2)
+}
+.gallery-item-big img,
+.gallery-item-small img {
+    width: 100%;
+    height: auto
 }
 .gallery-inner {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between
 }
 .gallery-item-small {
+    overflow: hidden;
     display: inline-block;
-    -webkit-box-shadow: 0 0 15px rgba(0, 1, 1, 0.2);
-            box-shadow: 0 0 15px rgba(0, 1, 1, 0.2);
+    -webkit-box-shadow: 0 0 15px rgba(0, 1, 1, .2);
+    box-shadow: 0 0 15px rgba(0, 1, 1, .2)
 }
-/*========================
-#PRODUCT ARTICLE
-==========================*/
 .product-article {
-    width: 390px;
+    width: 390px
 }
 .product-info {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     margin-top: 22px;
     margin-bottom: 29px;
-    padding-right: 12px;
+    padding-right: 12px
 }
 .product-code {
-    opacity: 0.3;
+    opacity: .3
 }
 .product-description {
-    margin-bottom: 35px;
+    margin-bottom: 35px
 }
 .product-price {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-bottom: 61px;
+    margin-bottom: 61px
 }
 .text-price {
     display: inline-block;
     background: #e5e5e5;
-    color: #000000;
+    color: #000;
     padding: 9px;
     text-align: center;
     vertical-align: middle;
     width: 109px;
-    height: 43px;
+    height: 43px
 }
 .btn-buy {
     display: inline-block;
     width: 78px;
-    height: 43px;
+    height: 43px
 }
 .product-set-title {
     font-size: 24px;
     line-height: 30px;
-    margin-bottom: 27px;
+    margin-bottom: 27px
 }
 .product-set-list li {
     position: relative;
     list-style: none;
-    padding-left: 22px;
+    padding-left: 22px
 }
 .product-set-list li::before {
     position: absolute;
@@ -917,14 +1023,11 @@ table td:last-child {
     height: 8px;
     top: 8px;
     left: 2px;
-    background: #000000;
+    background: #000;
     -webkit-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-            transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg)
 }
-/*========================
-#MODAL WINDOW - MAP SECTION
-==========================*/
 .modal {
     display: none;
     position: absolute;
@@ -934,13 +1037,12 @@ table td:last-child {
     width: 460px;
     height: 390px;
     padding: 50px 81px;
-    color: #000000;
+    color: #000;
     background: #f8f3f0 url(../img/bckgr.png);
-    -webkit-box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
-            box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
-    outline: 1px solid black;
+    -webkit-box-shadow: 0 30px 50px rgba(0, 0, 0, .7);
+    box-shadow: 0 30px 50px rgba(0, 0, 0, .7);
+    outline: 1px solid #000
 }
-
 .modal-content-close {
     position: absolute;
     top: 7px;
@@ -950,10 +1052,10 @@ table td:last-child {
     font-size: 0;
     border: 0;
     cursor: pointer;
-    background: transparent;
+    background: 0 0
 }
-.modal-content-close::before,
-.modal-content-close::after {
+.modal-content-close::after,
+.modal-content-close::before {
     position: absolute;
     content: "";
     width: 23px;
@@ -962,71 +1064,74 @@ table td:last-child {
     height: 5px;
     background: #d0d0d0;
     -webkit-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-            transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg)
 }
 .modal-content-close::after {
     -webkit-transform: rotate(-45deg);
-        -ms-transform: rotate(-45deg);
-            transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg)
 }
-.modal-content-close:hover::before,
-.modal-content-close:hover::after {
-    background-color: #be6c19; 
+.modal-content-close:hover::after,
+.modal-content-close:hover::before {
+    background-color: #be6c19
 }
 .modal-title {
     font-size: 30px;
     margin: 0;
     margin-top: 4px;
     margin-bottom: 24px;
-    padding: 0;
+    padding: 0
 }
 .login-form-text {
-    margin-bottom: 11px;
+    margin-bottom: 11px
 }
 .login-form input {
     width: 100%;
-    background: #ffffff;
+    background: #fff;
     border: 2px solid #000101;
     padding: 11px 12px 12px 14px;
-    font-family: "PT Sans Narrow", "Arial", sans-serif;
+    font-family: "PT Sans Narrow", Arial, sans-serif;
     text-transform: uppercase;
     font-weight: 700;
-    margin-bottom: 9px;
+    margin-bottom: 9px
 }
 .login-form input:focus {
-    outline: none;
-    border-color: #663d15;
+    outline: 0;
+    border-color: #663d15
 }
 .login-form input.icon-user {
-    background-image: url("../img/user-icon.png");
+    background-image: url(../img/user-icon.png);
     background-repeat: no-repeat;
-    background-position: 266px 11px;
+    background-position: 266px 11px
 }
 .login-form input.icon-password {
-    background-image: url("../img/user-icon.png");
+    background-image: url(../img/user-icon.png);
     background-repeat: no-repeat;
     background-position: 267px -40px;
-    margin-bottom: 13px;
+    margin-bottom: 13px
 }
 .check {
     width: unset;
-    display: none;
+    display: none
 }
 .remember {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    margin-bottom: 15px;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 15px
+}
+.restore {
+    color: #000
 }
 .login-checkbox {
     cursor: pointer;
     position: absolute;
     left: 82px;
-    padding-left: 30px;
+    padding-left: 30px
 }
 .login-checkbox::before {
     position: absolute;
@@ -1035,18 +1140,15 @@ table td:last-child {
     left: -2px;
     width: 20px;
     height: 20px;
-    border: 2px solid #000;
+    border: 2px solid #000
 }
 .btn-enter {
-    width: 100%;
+    width: 100%
 }
-input[type="checkbox"]:checked + .login-checkbox::before  {
-    background: url("../img/cross.png") no-repeat;
-    background-position: 2px 2px;
+input[type=checkbox]:checked+.login-checkbox::before {
+    background: url(../img/cross.png) no-repeat;
+    background-position: 2px 2px
 }
-/*========================
-#MAP
-==========================*/
 .modal-content-map {
     display: none;
     width: 766px;
@@ -1056,15 +1158,15 @@ input[type="checkbox"]:checked + .login-checkbox::before  {
     left: 50%;
     margin-top: -280px;
     margin-left: -390px;
-    border: 7px solid white;
-    background: url("../img/map.png") no-repeat;
-    -webkit-box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
-            box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
-    z-index: 100;
+    border: 7px solid #fff;
+    background: url(../img/map.png) no-repeat;
+    -webkit-box-shadow: 0 30px 50px rgba(0, 0, 0, .7);
+    box-shadow: 0 30px 50px rgba(0, 0, 0, .7);
+    z-index: 100
 }
 .modal-content-map iframe {
     border: none;
-    width: 100%;
+    width: 100%
 }
 .modal-overlay {
     display: none;
@@ -1074,26 +1176,44 @@ input[type="checkbox"]:checked + .login-checkbox::before  {
     z-index: 10;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, .5)
 }
-
-/* Animation */
 @keyframes bounce {
-    0% {transform: translateY(-2000px);}
-    70% {transform: translateY(30px);}
-    90% {transform: translateY(-10px);}
-    100% {transform: translateY(0);}
+    0% {
+        transform: translateY(-2000px)
+    }
+    70% {
+        transform: translateY(30px)
+    }
+    90% {
+        transform: translateY(-10px)
+    }
+    100% {
+        transform: translateY(0)
+    }
 }
 @keyframes shake {
-    0%, 100% {transform: translateX(0);}
-    10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);}
-    20%, 40%, 60%, 80% {transform: translateX(10px);}
+    0%, 100% {
+        transform: translateX(0)
+    }
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: translateX(-10px)
+    }
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: translateX(10px)
+    }
 }
-/* JS */
 .modal-show {
     display: block;
-    animation: bounce 0.6s;
+    animation: bounce .6s
 }
 .modal-error {
-    animation: shake 0.6s;
+    animation: shake .6s
 }
