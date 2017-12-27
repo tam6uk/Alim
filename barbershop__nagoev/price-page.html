@@ -5,14 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- <link rel="stylesheet" href="css/fonts.css"> -->
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:700&amp;subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="favicon-64x64.png" sizes="64x64">
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
     <title>Прайс-лист</title>
 </head>
 
-<body>
+<body class="inner-page">
     <!-- HEADER -->
     <header class="main-header">
         <div class="container flex-container">
@@ -46,7 +49,7 @@
     <!-- MAIN -->
     <main class="main">
         <div class="container">
-            <h1 class="item-title">Прайс-лист</h1>
+            <h1 class="price-title">Прайс-лист</h1>
             <nav class="breadcrumbs">
                 <ul class="breadcrumbs-items">
                     <li class="breadcrumbs-item">
@@ -58,11 +61,10 @@
                 </ul>
             </nav>
             <span class="classic">Истинно мужская классика</span>
-
-            
             <div class="price-items">
                 <div class="composition">
-                    <h3 class="composition-title">Мы используем только лучшие средства:</h3>
+                    <h3 class="composition-title">Мы используем только
+                        <br> лучшие средства:</h3>
                     <ul class="composition-list">
                         <li>Baxter of California</li>
                         <li>Mr Natty</li>
@@ -70,21 +72,21 @@
                         <li>Malin+Goetz</li>
                     </ul>
                 </div>
-
                 <div class="price-table">
-                    <h3 class="price-caption">Цены на услуги наших мастеров:</h3>
+                    <h3 class="price-title">Цены на услуги
+                        <br> наших мастеров:</h3>
                     <table>
                         <tr>
                             <td class="price-name">Стрижка</td>
-                            <td class="price-price">1500 р.</td>
+                            <td class="price-price">1500 &#8381;</td>
                         </tr>
                         <tr>
                             <td class="price-name">Стрижка бороды</td>
-                            <td class="price-price">500 р.</td>
+                            <td class="price-price">500 &#8381;</td>
                         </tr>
                         <tr>
                             <td class="price-name">Накрутка усов</td>
-                            <td class="price-price">350 р.</td>
+                            <td class="price-price">350 &#8381;</td>
                         </tr>
                     </table>
                 </div>
@@ -102,30 +104,56 @@
         </div>
     </main>
     <!-- FOOTER -->
-	<footer class="main-footer">
-		<div class="container flex-container">
-			<div class="footer-contacts">
-				<p>Барбершоп "Бородинский"</p>
-				<p>Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8</p>
-				<p>
-					<a href="#">Как нас найти?</a>
-				</p>
-				<p>Телефон:
-					<a href="#">+7 (812) 666-02-66</a>
-				</p>
-			</div>
-			<div class="footer-social">
-				<p>Давайте дружить!</p>
-				<a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-				<a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-				<a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-			</div>
-			<div class="footer-copyright">
-				<p>Разработано:</p>
-				<a class="btn btn-copyright" href="https://htmlacademy.ru">HTML Academy</a>
-			</div>
-		</div>
-	</footer>
+    <footer class="main-footer">
+        <div class="container flex-container">
+            <div class="footer-contacts">
+                <p>Барбершоп &#171;Бородинский&#187;</p>
+                <p>Адрес: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+                <p>
+                    <a href="#">Как нас найти?</a>
+                </p>
+                <p>
+                    <a href="#">Телефон: +7 (495) 666-02-66</a>
+                </p>
+            </div>
+            <div class="footer-social">
+                <p>Давайте дружить!</p>
+                <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+                <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+                <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+            </div>
+            <div class="footer-copyright">
+                <p>Разработано:</p>
+                <a class="btn btn-copyright" href="https://htmlacademy.ru">HTML Academy</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MODAL -->
+    <div class="modal">
+        <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+        <h2 class="modal-title">Личный кабинет</h2>
+
+        <form class="login-form" action="#" method="post">
+            <p class="login-form-text">Введите пожалуйста свой логин и пароль</p>
+            <div class="login-form-inputs">
+                <input class="icon-user" type="text" name="login" placeholder="Логин">
+                <input class="icon-password" type="password" name="password" placeholder="Пароль">
+                <div class="remember">
+                    <div class="checkbox-wrap">
+                        <input class="check" type="checkbox" id="remember" name="remember">
+                        <label class="login-checkbox" for="remember">Запомните меня</label>
+                    </div>
+                    <a class="restore" href="#">Я забыл пароль!</a>
+                </div>
+                <button class="btn btn-enter" type="submit">Войти</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="modal-overlay"></div>
+    <!-- JS -->
+    <script src="js/script.js"></script>
 </body>
 
 </html>

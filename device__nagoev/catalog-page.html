@@ -5,39 +5,40 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="stylesheet" href="css/fonts.css">
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="icon" type="image/png" href="/img/favico.png" sizes="16x16">
 	<title>Каталог</title>
 </head>
 
 <body>
 	<!-- HEADER -->
 	<header class="header">
-		<div class="container">
+		<div class="container header-inner">
 			<!-- LOGO -->
-			<a class="main-logo" href="index.html">
-				<img src="img/logo.svg" alt="Логотип" width="164" height="36">
+			<a class="header-logo" href="index.html">
+				<img class="logo" src="img/logo.svg" alt="Логотип" width="164" height="36">
 			</a>
 
 			<div class="header-top">
 				<!-- FORM-SEARCH -->
-				<form action="#" method="post" class="search">
-					<input id="input" type="search" name="search" placeholder="Поиск по сайту">
-					<button class="btn btn-submit" type="submit">Найти</button>
-				</form>
+				<div class="search-wrap">
+					<form action="#" method="post" class="form-search">
+						<input class="search " id="input" type="search" name="search" placeholder="Поиск по сайту">
+						<button class="btn-search" type="submit">Найти</button>
+					</form>
+				</div>
 				<!-- USER-BLOCK -->
-				<div class="user-block">
-					<a class="enter" href="#">Валентин Петухов</a>
-					<a class="exit" href="#">Выйти</a>
-					<a class="compare" href="#">Сравнить</a>
+				<div class="user-block header-user-block">
+					<a class="login user-name" href="#">Валентин Петухов</a>
+					<a class="exit user-exit" href="#">Выйти</a>
+					<a class="compare user-compare" href="#">Сравнить</a>
 					<a class="cart" href="#">Корзина</a>
 				</div>
 			</div>
 			<div class="header-bottom">
 				<!--MENU -SUBMENU -->
 				<div class="submenu-dropdown">
-					<a href="catalog-page.html">Каталог товаров</a>
+					<a class="submenu-dropdown-link" href="catalog-page.html">Каталог товаров</a>
 					<div class="dropdown-menu">
 						<ul class="dropdown-list">
 							<li class="dropdown-list-item">
@@ -67,14 +68,14 @@
 				</div>
 				<!-- MAIN-MENU -->
 				<nav class="menu">
-					<ul class="navigation">
-						<li class="navigation-item">
+					<ul class="header-nav">
+						<li class="nav-item">
 							<a href="#">Доставка</a>
 						</li>
-						<li class="navigation-item">
+						<li class="nav-item">
 							<a href="#">Гарантия</a>
 						</li>
-						<li class="navigation-item">
+						<li class="nav-item">
 							<a href="#">Контакты</a>
 						</li>
 					</ul>
@@ -117,13 +118,13 @@
 					<h2 class="catalog-sort-subtittle">Сортировка:</h2>
 
 					<div class="catalog-sort-type">
-						<a class="current">По цене</a>
-						<a href="#">По типу</a>
-						<a href="#">По популярности</a>
+						<a class="price current">По цене</a>
+						<a class="type" href="#">По типу</a>
+						<a class="raiting" href="#">По популярности</a>
 					</div>
 
 					<div class="catalog-sort-direction">
-						<a class="btn-up" href="#">up</a>
+						<a class="btn-up">up</a>
 						<a class="btn-down current">down</a>
 					</div>
 				</div>
@@ -137,61 +138,78 @@
 				<!-- FORM SECTION -->
 				<div class="catalog-filter">
 					<form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
-						<fieldset>
+						<fieldset class="cost">
 							<legend class="form-legend">Стоимость</legend>
-							<div class="range-controls">
-								<div class="scale">
-									<div class="bar"></div>
+							<div class="range-filter">
+								<div class="range-controls">
+									<div class="scale">
+										<div class="bar"></div>
+									</div>
+									<div class="toggle toggle-min"></div>
+									<div class="toggle toggle-max"></div>
 								</div>
-								<div class="toggle toggle-min"></div>
-								<div class="toggle toggle-max"></div>
-							</div>
-							<div class="selected-price">
-								<span>от 0</span>
-								<span>до 5000</span>
+								<div class="price-controls">
+									<label class="min-price">от
+										<input name="min-price" type="text" value="0">
+									</label>
+									<label class="max-price">до
+										<input name="max-price" type="text" value="5000">
+									</label>
+								</div>
 							</div>
 						</fieldset>
 
-						<fieldset>
+						<fieldset class="color">
 							<legend class="form-legend">Цвет</legend>
-							<input class="filter-checkbox" type="checkbox" name="black" id="black" checked>
-							<label for="black">Черный</label>
-							<br>
-							<input class="filter-checkbox" type="checkbox" name="white" id="white">
-							<label for="white">Белый</label>
-							<br>
-							<input class="filter-checkbox" type="checkbox" name="blue" id="blue" checked>
-							<label for="blue">Синий</label>
-							<br>
-							<input class="filter-checkbox" type="checkbox" name="red" id="red" checked>
-							<label for="red">Красный</label>
-							<br>
-							<input class="filter-checkbox" type="checkbox" name="pink" id="pink">
-							<label for="pink">Розовый</label>
+							<div class="input-wrap">
+								<input class="filter-checkbox" type="checkbox" name="black" id="black" checked>
+								<label for="black">Черный</label>
+							</div>
+							<div class="input-wrap">
+								<input class="filter-checkbox" type="checkbox" name="white" id="white">
+								<label for="white">Белый</label>
+							</div>
+							<div class="input-wrap">
+								<input class="filter-checkbox" type="checkbox" name="blue" id="blue" checked>
+								<label for="blue">Синий</label>
+							</div>
+							<div class="input-wrap">
+								<input class="filter-checkbox" type="checkbox" name="red" id="red" checked>
+								<label for="red">Красный</label>
+							</div>
+							<div class="input-wrap">
+								<input class="filter-checkbox" type="checkbox" name="pink" id="pink">
+								<label for="pink">Розовый</label>
+							</div>
 						</fieldset>
 
-						<fieldset>
+						<fieldset class="bluetooth">
 							<legend class="form-legend">Bluetooth</legend>
-							<input class="filter-radio" type="radio" value="Есть" name="bluetooth" id="bth-yes" checked>
-							<label for="bth-yes">Есть</label>
-							<br>
-							<input class="filter-radio" type="radio" value="Нет" name="bluetooth" id="bth-no">
-							<label for="bth-no">Нет</label>
+							<div class="input-wrap">
+								<input class="filter-radio" type="radio" value="Есть" name="bluetooth" id="bth-yes" checked>
+								<label for="bth-yes">Есть</label>
+							</div>
+
+							<div class="input-wrap">
+								<input class="filter-radio" type="radio" value="Нет" name="bluetooth" id="bth-no">
+								<label for="bth-no">Нет</label>
+							</div>
+
 						</fieldset>
-						<button class="device-btn" type="submit">Показать</button>
+						<button class="btn btn-device" type="submit">Показать</button>
 					</form>
 				</div>
 
 				<!-- CATALOG SECTION -->
 				<div class="search-results">
-					
+
 					<div class="item-list">
 						<div class="item-card">
 							<div class="img-wrapper">
 								<img class="item-cart-image" src="img/item-1.jpg" width="360" height="380" alt="Фото любительской селфи-палки">
 							</div>
 							<div class="item-card-action">
-								<a class="item-card-buy" href="#">В корзину</a>
+								<a class="btn btn-card-buy" href="#">В корзину</a>
 								<a class="item-card-compare" href="#">Добавить к сравнению</a>
 							</div>
 							<div class="item-card-description">
@@ -205,7 +223,7 @@
 								<img class="item-cart-image" src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
 							</div>
 							<div class="item-card-action">
-								<a class="item-card-buy" href="#">В корзину</a>
+								<a class="btn btn-card-buy" href="#">В корзину</a>
 								<a class="item-card-compare" href="#">Добавить к сравнению</a>
 							</div>
 							<div class="item-card-description">
@@ -219,7 +237,7 @@
 								<img class="item-cart-image" src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
 							</div>
 							<div class="item-card-action">
-								<a class="item-card-buy" href="#">В корзину</a>
+								<a class="btn btn-card-buy" href="#">В корзину</a>
 								<a class="item-card-compare" href="#">Добавить к сравнению</a>
 							</div>
 							<div class="item-card-description">
@@ -233,7 +251,7 @@
 								<img class="item-cart-image" src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
 							</div>
 							<div class="item-card-action">
-								<a class="item-card-buy" href="#">В корзину</a>
+								<a class="btn btn-card-buy" href="#">В корзину</a>
 								<a class="item-card-compare" href="#">Добавить к сравнению</a>
 							</div>
 							<div class="item-card-description">
@@ -243,19 +261,19 @@
 						</div>
 
 						<div class="pagination">
-							<a class="catalog-nav nav-prev" href="#">Назад</a>
+							<a class="nav-prev" href="#">Назад</a>
 							<ul class="catalog-nav">
 								<li>
-									<a class="active">1</a>
+									<a class="catalog-nav-item active">1</a>
 								</li>
 								<li>
-									<a href="#">2</a>
+									<a class="catalog-nav-item" href="#">2</a>
 								</li>
 								<li>
-									<a href="#">3</a>
+									<a class="catalog-nav-item" href="#">3</a>
 								</li>
 							</ul>
-							<a class="catalog-nav nav-next" href="#">Вперед</a>
+							<a class="nav-next" href="#">Вперед</a>
 						</div>
 					</div>
 				</div>
@@ -264,37 +282,39 @@
 	</main>
 
 	<!-- FOOTER -->
-	<footer class="main-footer">
+	<!-- MAIN-FOOTER -->
+	<footer class="main-footer footer-inner">
 		<div class="container footer-wrap">
 			<div class="footer-company">
-				<div class="footer-logo">
-					<img src="img/logo.svg" alt="Логотип" width="164" height="36">
-				</div>
+				<a class="footer-logo" href="#">
+					<img src="img/flogo.png" alt="Логотип" width="164" height="36">
+				</a>
 				<p class="company-address">г. Москва, ул. Строителей, 15</p>
 			</div>
+
 			<div class="footer-middle">
 				<nav class="menu">
-					<ul class="navigation">
-						<li class="navigation-item">
+					<ul class="footer-nav">
+						<li class="nav-item">
 							<a href="#">Доставка</a>
 						</li>
-						<li class="navigation-item">
+						<li class="nav-item">
 							<a href="#">Гарантия</a>
 						</li>
-						<li class="navigation-item">
+						<li class="nav-item">
 							<a href="#">Контакты</a>
 						</li>
 					</ul>
 				</nav>
 				<div class="footer-social">
-					<a href="#" class="social-btn social-btn-vk">Вконтакте</a>
 					<a href="#" class="social-btn social-btn-fb">Фейсбук</a>
 					<a href="#" class="social-btn social-btn-inst">Инстаграм</a>
+					<a href="#" class="social-btn social-btn-tw">Твиттер</a>
 				</div>
 			</div>
 			<div class="footer-contacts">
-				<div class="user-block">
-					<a class="exit" href="#">Выйти</a>
+				<div class="user-block footer-user-block">
+					<a class="login" href="#">Выйти</a>
 					<a class="compare" href="#">Сравнить</a>
 					<a class="cart" href="#">Корзина</a>
 				</div>
